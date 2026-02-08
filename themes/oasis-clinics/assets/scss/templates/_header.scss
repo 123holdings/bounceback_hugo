@@ -1,0 +1,429 @@
+// start header style
+.header-height-fix {
+  height: 105px;
+
+  @include mq(1060px) {
+    height: 105px;
+  }
+}
+
+.header {
+  /* Top header design*/
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: 0.15s ease-out;
+  background-color: $white;
+  box-shadow: 0px 8px 50px #0566390d;
+  overflow-y: scroll;
+  &-open {
+    bottom: 0;
+  }
+  @include mq(1060px) {
+    overflow-y: visible;
+  }
+
+  &__top {
+    display: none;
+    @include mq(1060px) {
+      background-color: $black;
+      display: block;
+    }
+  }
+
+  &__info {
+    color: $secondary_text;
+    font-size: 14px;
+    @include mq(1060px) {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    a,
+    select {
+      color: $secondary_text;
+    }
+  }
+
+  &__info-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include mq(1060px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__vl {
+    height: 22px;
+    width: 1px;
+    background-color: rgba(#ffffff, 0.2);
+  }
+
+  &__info-left {
+    @include mq(1060px) {
+      display: flex;
+      align-content: center;
+      margin-left: 16px;
+    }
+
+    &--mobile {
+      padding-left: 35px;
+    }
+  }
+
+  &__time,
+  &__phone-number,
+  &__email {
+    direction: ltr;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 11px 40px 11px 15px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__info-link {
+    padding: 11px 30px;
+    position: relative;
+
+    &:first-child,
+    &:last-child {
+      padding-left: 20px;
+      @include mq(1060px) {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  &__language {
+    width: 100%;
+    @include mq(1060px) {
+      direction: ltr;
+      width: 108px;
+    }
+  }
+
+  &__language-options {
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    border: 0;
+    @include mq(1060px) {
+      font-size: 12px;
+    }
+  }
+
+  /*logo*/
+  .navbar-brand {
+    width: 132px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /*custom filter style here*/
+  .custom-select select {
+    display: none;
+  }
+
+  .select-selected {
+    background-color: $black;
+    position: relative;
+    @include mq(1060px) {
+      position: static;
+    }
+  }
+
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 65px;
+    width: 10px;
+    height: 6px;
+    transform: translateY(-50%) rotate(-180deg);
+    background-image: url("/images/down-arrow.svg");
+    border: none;
+    @include mq(1060px) {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: auto;
+      width: 10px;
+      height: 6px;
+      transform: translateY(-50%) rotate(-180deg);
+      background-image: url("/images/down-arrow.svg");
+    }
+  }
+
+  .lang-sign-left .select-selected:after {
+    @include mq(1060px) {
+      left: 0;
+    }
+  }
+  .header__info--mobile.lang-sign-left .select-selected:after {
+    right: -30px;
+  }
+
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    top: 50%;
+    background-image: url("/images/down-arrow.svg");
+    transform: translateY(-50%) rotate(0);
+  }
+
+  /* style the items (options), including the selected item: */
+  .select-items div,
+  .select-selected {
+    color: $secondary-text;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .header__info--mobile.lang-sign-left .select-selected {
+    margin-right: 31px;
+  }
+
+  /* Style items (options): */
+  .select-items {
+    position: static;
+    background-color: $black;
+    div {
+      padding: 7px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 15px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $white;
+        border-radius: 50%;
+        opacity: 0.8;
+        span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 0;
+        }
+      }
+    }
+
+    @include mq(1060px) {
+      color: #000000;
+      width: 144px;
+      overflow: hidden;
+      position: absolute;
+      background-color: $white;
+      top: 100%;
+      right: -15px;
+      z-index: 99;
+      box-shadow: 0px 8px 25px rgba(5, 104, 57, 0.1);
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: -6px;
+      box-shadow: 0px 8px 25px rgba(5, 104, 57, 0.1);
+      border-radius: 5px;
+
+      div {
+        padding: 7px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 15px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #000000;
+          border-radius: 50%;
+          span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover {
+    background-color: rgba(5, 104, 57, 0.11);
+  }
+  .same-as-selected {
+    background-color: transparent;
+    span {
+      border: 1px solid $green !important;
+      @include mq(1060px) {
+        border: 1px solid #000000;
+      }
+    }
+    span > span {
+      background: $green;
+    }
+  }
+}
+
+.header__info--mobile.lang-sign-left .select-items div {
+  justify-content: right;
+  padding-right: 0;
+}
+
+/* Main header design*/
+.header__main {
+  padding: 15px 0;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 8px 50px #0566390d;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mq(1060px) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.header__nav-toggle {
+  text-align: right;
+  @include mq(1060px) {
+    display: none;
+  }
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0 0 40px 0;
+  list-style: none;
+  display: none;
+  @include mq(1060px) {
+    display: flex;
+    padding: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: $primary-text;
+
+    &:focus,
+    &:hover,
+    &:active,
+    &--active {
+      text-shadow: 0 0 1px;
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+
+  &--mobile {
+    display: block;
+  }
+}
+.header__info--mobile .select-selected{
+  color: $secondary_color;
+}
+
+.header .header__info--mobile .select-selected:after {
+  top: 50%;
+  background-image: url(/images/down-arrow-green.png);
+  transform: translateY(-50%) rotate(0);
+  transition: transform 0.2s linear;
+}
+.header .header__info--mobile .select-selected.select-arrow-active:after {
+  background-image: url(/images/down-arrow-green.png);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.header__info--mobile.lang-sign-left {
+  .header__time,
+  .header__phone-number,
+  .header__email {
+    direction: rtl;
+    display: block;
+    padding-right: 30px;
+  }
+  .header__icon {
+    left: auto;
+    margin-right: 10px;
+  }
+}
+.header__info--mobile.lang-sign-left {
+  .header__phone-number span{
+    display: inline-block;
+    direction: ltr;
+  }
+}
+
+.button-mobile {
+  display: block;
+  text-align: center;
+  width: 80%;
+  max-width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  @include mq(1060px) {
+    display: none;
+  }
+}
+
+.button-desktop {
+  display: none;
+  @include mq(1060px) {
+    display: inline-block;
+  }
+}
+
+/*Mobile navigation design here*/
+
+.header__mobile-nav {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  min-height: 0;
+  transition: min-height 0.4s ease-out;
+  overflow: hidden;
+  @include mq(1060px) {
+    display: none;
+  }
+  &-open {
+    padding-top: 30px;
+    min-height: calc(100vh - 78px);
+    overflow: auto;
+  }
+}
+
+.header__info-wrapper {
+  background-color: $black;
+  padding: 30px 5px;
+  margin-top: auto;
+}

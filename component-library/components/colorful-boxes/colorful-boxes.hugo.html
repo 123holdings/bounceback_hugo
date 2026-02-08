@@ -1,0 +1,82 @@
+{{ if .enable }}
+<section class="colorful-boxes">
+    <div class="container">
+        <div class="colorful-boxes__content">
+            <div class="colorful-boxes__cards">
+                {{ with .light_green_dark_card }}
+                <div class="colorful-boxes__card colorful-boxes__card--green-dark">
+                    <div class="colorful-boxes__text-wrap">
+                        <div class="colorful-boxes__header">
+                            {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
+                                {{- $img:= resources.Get  (printf "%s" .image) -}}
+                                {{- $img_destop:= $img.Resize "webp 40x" -}}
+                                <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                            {{- end -}}
+                            <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
+                        </div>
+                        <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
+                    </div>
+                    <div class="colorful-boxes__button-wrap">
+                        <a class="boxes-button colorful-boxes__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .light_green_light }}
+                <div class="colorful-boxes__card colorful-boxes__card--green-light">
+                    <div class="colorful-boxes__text-wrap">
+                        <div class="colorful-boxes__header">
+                            {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
+                                {{- $img:= resources.Get  (printf "%s" .image) -}}
+                                {{- $img_destop:= $img.Resize "webp 40x" -}}
+                                <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                            {{- end -}}
+                            <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
+                        </div>
+                        <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
+                    </div>
+                    <div class="colorful-boxes__button-wrap">
+                        <a class="boxes-button colorful-boxes__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .dark_green_light_card }}
+                <div class="colorful-boxes__card colorful-boxes__card--green-dark">
+                    <div class="colorful-boxes__text-wrap">
+                        <div class="colorful-boxes__header">
+                            {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
+                                {{- $img:= resources.Get  (printf "%s" .image) -}}
+                                {{- $img_destop:= $img.Resize "webp 40x" -}}
+                                <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                            {{- end -}}
+                            <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
+                        </div>
+                        <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
+                    </div>
+                    <div class="colorful-boxes__button-wrap">
+                        <a class="boxes-button colorful-boxes__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .dark_green_dark }}
+                <div class="colorful-boxes__card colorful-boxes__card--green-light">
+                    <div class="colorful-boxes__text-wrap">
+                        <div class="colorful-boxes__header">
+                            {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
+                                {{- $img:= resources.Get  (printf "%s" .image) -}}
+                                {{- $img_destop:= $img.Resize "webp 40x" -}}
+                                <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                            {{- end -}}
+                            <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
+                        </div>
+                        <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
+                    </div>
+                    <div class="colorful-boxes__button-wrap">
+                        <a class="boxes-button colorful-boxes__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

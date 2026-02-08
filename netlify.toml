@@ -1,0 +1,44 @@
+[build]
+command = "hugo --gc --minify"
+publish = "public"
+functions = "netlify/functions"  # 🔹 Add this line
+
+[functions]
+  node_bundler = "esbuild"  # 🔹 Ensure ESBuild for compatibility
+
+[context.production.environment]
+HUGO_ENABLEGITINFO = "true"
+HUGO_ENV = "production"
+HUGO_VERSION = "0.148.2"  # 🔹 Fixed the missing "="
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_ENV = "production"
+HUGO_VERSION = "0.148.2"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.148.2"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.148.2"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[[headers]]
+for = "/*"
+  [headers.values]
+  Access-Control-Allow-Origin = "*"

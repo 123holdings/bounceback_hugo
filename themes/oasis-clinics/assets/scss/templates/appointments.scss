@@ -1,0 +1,138 @@
+.appointment {
+  padding-bottom: 70px;
+  @include tablet {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.appointment-hero {
+  @include tablet {
+    flex: 1 0 50%;
+  }
+}
+
+.appointment-form {
+  @include tablet {
+    flex: 1 0 50%;
+  }
+}
+
+.appointment-heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: $primary-text;
+  @include tablet {
+    font-size: 32px;
+  }
+}
+
+.appointment-text {
+  font-size: 14px;
+  color: rgba($primary-text, 0.8);
+}
+
+.appointment-form {
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+    color: $green;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+
+  select,
+  input, 
+  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    resize: none;
+    @include tablet {
+      font-size: 14px;
+    }
+
+    &::placeholder {
+      color: ($primary-text, 0.4);
+      font-family: $primary-font;
+    }
+  }
+
+  .appointment-button {
+    margin-top: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .custom-select {
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+}
+
+/*custom select option for appointment form*/
+
+.appointment-form__cutom-select {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.custom-option {
+  font-size: 12px;
+  @include tablet {
+    font-size: 14px;
+  }
+  flex: 1 0 106px;
+  border: 1px solid #e0e0e0;
+  padding: 11px;
+  text-align: center;
+  margin-left: -1px;
+  color: $primary-text;
+  cursor: pointer;
+
+  &:nth-child(2) {
+    border-radius: 4px 0px 0px 4px;
+  }
+
+  &:last-child {
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  &--active {
+    background: #e6f0eb;
+  }
+}
+
+.appointment-form {
+  .select-items div:first-child {
+    display: none;
+  }
+}
+
+form  span{
+  display: block;
+}
+
+form  .hide{
+  display: none;
+}
+#error-msg{
+  color: rgb(233, 100, 100);
+}
+#valid-msg{
+  color: #056839;
+}
+
+.g-recaptcha{
+  margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+{{- $current := .current -}}
+{{- range .pages -}}
+
+  <div class="clinics-sidebar__item {{ if eq $current.RelPermalink .RelPermalink }}clinics-sidebar__item--active{{ end }}">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
+
+  {{- $children := union .Sections .Pages -}}
+  {{- if $children -}}
+    <div class="clinics-sidebar__children">
+      {{ partial "sidebar-tree.html" (dict "pages" $children "current" $current) }}
+    </div>
+  {{- end -}}
+
+{{- end -}}

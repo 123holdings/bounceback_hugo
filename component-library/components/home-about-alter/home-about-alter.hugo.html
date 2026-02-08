@@ -1,0 +1,24 @@
+{{ if .enable }}
+<section class="home-about home-about-alter">
+    <div class="container">
+        <div class="home-about__content">
+            <div class="home-about__image-wrap home-about-alter__image-wrap">
+                {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
+                    {{- $img:= resources.Get  (printf "%s" .image) -}}
+                    {{- $img_destop:= $img.Resize "webp 670x" -}}
+                    {{- $img_mobile:= $img.Resize "webp 335x" -}}
+                    <picture>
+                        <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
+                        <img class="home-about__image" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                    </picture>
+                {{- end -}}
+            </div>
+            <div class="home-about__text-wrap">
+                <h2 class="home-about__heading">{{.heading | markdownify}}</h2>
+                <p class="home-about__text">{{.text | markdownify | emojify}}</p>
+                <a class="button home-about__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

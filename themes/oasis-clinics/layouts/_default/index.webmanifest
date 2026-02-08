@@ -1,0 +1,36 @@
+{
+  "name": "{{site.Title}}",
+  "short_name": "{{site.Title}}",
+  "lang": "{{ site.LanguageCode | default `en-us` }}",
+  {{ with site.Params.variables.color_primary }}"theme_color": "{{.}}",{{ end }}
+  {{ with site.Params.variables.body_color }}"background_color": "{{.}}",{{ end }}
+
+  {{ $icon:= site.Params.favicon }}
+  {{ if $icon }}
+  {{ if fileExists (add `assets/` $icon) }}
+  {{ $icon:= resources.Get $icon }}
+  {{ $icon_16:= $icon.Resize "16x png" }}
+  {{ $icon_32:= $icon.Resize "32x png" }}
+  {{ $icon_180:= $icon.Resize "180x png" }}
+  "icons": [
+    {
+      "src": "{{$icon_16.RelPermalink}}",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "{{$icon_32.RelPermalink}}",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "{{$icon_180.RelPermalink}}",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  {{ end }}
+  {{ end }}
+  "display": "standalone",
+  "start_url": "{{ site.BaseURL | relLangURL }}?utm_source=web_app_manifest"
+}

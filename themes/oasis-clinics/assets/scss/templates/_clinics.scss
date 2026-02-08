@@ -1,0 +1,340 @@
+.clinics-title a{
+  color: inherit;
+  text-decoration: none;
+
+}
+.clinics-title a:hover{
+  color: $green;
+
+}
+.clinics-title--active{
+  color: $green;
+}
+
+/* clinics cards section style here */
+
+.clinics-cards {
+  padding: 30px 0 80px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+
+.clinics-card {
+  width: 335px;
+  padding: 20px 20px;
+  background: $white;
+  box-shadow: 0px 8px 50px rgba(5, 104, 57, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  // transition: transform 0.1s ease-out;
+  position: relative;
+
+  &:hover {
+    // text-decoration: none;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(5, 104, 57, 0.1);
+
+    & > .clinics-card__button-wrapper {
+      max-height: 80px;
+      padding-bottom: 25px;
+      padding-top: 5px;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+    width: 285px;
+  }
+
+  &__image-wrapper {
+    width: 245px;
+    height: 154px;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    border: 3px solid $white;
+    object-fit: cover;
+    border-radius: 4px 4px 0px 0px;
+    filter: drop-shadow(0px 4px 10px #05683930);
+  }
+
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    color: $primary-text;
+  }
+  &__details {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba($primary-text, 0.7);
+  }
+  &__location {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: $green;
+    display: inline-block;
+    text-align: center;
+
+    &-icon {
+      transform: translateY(20%);
+    }
+  }
+
+  &__button-wrapper {
+    max-height: 0;
+    background: $white;
+    box-shadow: 0px 8px 16px rgba(5, 104, 57, 0.1);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
+
+//clinics single page design start
+.clinics-hero {
+  background: #e6f0eb;
+  padding-bottom: 35px;
+
+  .doctor-backbtn {
+    @include tablet {
+      margin-top: 10px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 35px;
+  }
+
+  &__heading {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 11px;
+    color: $green;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__image {
+    margin-top: 25px;
+    @include tablet {
+      margin-top: 0;
+    }
+    img {
+      width: 100%;
+      max-width: 375px;
+      object-fit: cover;
+      border-radius: 4px 4px 0px 0px;
+      @include tablet {
+        width: 375px;
+        max-width: 484px;
+      }
+
+      @media (min-width: 860px) {
+        width: 484px;
+      }
+    }
+  }
+
+  .container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.clinics-main {
+  padding-bottom: 70px;
+  padding-top: 30px;
+
+  .container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.side-bar-manu {
+  background: #e6f0eb;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  @include tablet {
+    display: none;
+  }
+  &--sticky {
+    position: fixed;
+    top: 107px;
+    width: calc(100% - 80px);
+    z-index: 500;
+  }
+}
+
+.clinics-sidebar {
+  width: 100%;
+  background: #e6f0eb;
+  margin-bottom: 45px;
+  height: fit-content;
+  max-height: 0;
+  overflow-y: auto;
+  scrollbar-color: $green $green;
+  scrollbar-width: thin !important;
+  transition: max-height 0.3s ease-in;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $green;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $green;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $green;
+  }
+
+  @include tablet {
+    max-height: calc(100vh - 240px);
+    width: 350px;
+  }
+
+  &--open {
+    max-height: calc(100vh - 320px);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #000000;
+    padding: 20px;
+    border-bottom: 1px solid rgba(1, 26, 14, 0.1);
+    @include tablet {
+      padding: 21px 31px;
+    }
+    a{
+      color: inherit;
+      font-size: inherit;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $green;
+    }
+    &--active {
+      color: $green;
+      @include tablet {
+        border-right: 4px solid #056839;
+      }
+    }
+    svg{
+      flex-shrink: 0;
+      flex-basis: 8px;
+    }
+  }
+}
+
+.clinics-details {
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba($primary-text, 0.8);
+
+  @include tablet {
+    width: calc(100% - 400px);
+    margin-left: auto;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba($green, 0.8);
+  }
+  a {
+    color: rgba($green, 0.8);
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+    padding-left: 1em;
+    margin-bottom: 60px;
+  }
+  ol {
+    padding-left: 1em;
+    margin-bottom: 60px;
+  }
+  li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  ul li::before {
+    content: "\25CF";
+    color: #7fbc03;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+
+.rtl-dir .clinics-details {
+  margin-left: 0;
+  margin-right: auto;
+  ul li::before {
+    margin-left: 0;
+  }
+}
+.rtl-dir .clinics-sidebar {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+#sidebar.fixed {
+  position: fixed;
+  top: 140px;
+}

@@ -1,0 +1,246 @@
+.doctors-title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 50px;
+  color: $black;
+}
+
+.doctors-filter {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.doctors-filter__branches {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba($primary-text, 0.2);
+
+  @include tablet {
+    gap: 40px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.filter-branch {
+  font-family: $primary-font;
+  font-size: 14px;
+  border: none;
+  background: $white;
+  color: rgba($primary-text, 0.7);
+  padding: 0 2px 5px 2px;
+
+  &--active {
+    font-weight: 600;
+    color: $green;
+    border-bottom: 2px solid $green;
+  }
+}
+
+.filter-doctors {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 7px 14px;
+  font-size: 14px;
+  color: $primary-text;
+  font-family: $primary-font;
+  background: $white;
+  border: 1px solid rgba($primary-text, 0.2);
+  border-radius: 4px;
+
+  @include tablet {
+    margin-top: 0;
+    max-width: 200px;
+  }
+  @include desktop {
+    max-width: 262px;
+  }
+}
+
+/* docotor cards section style here */
+
+.doctor-cards {
+  padding: 30px 0 80px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+
+.doctor-card {
+  max-width: 335px;
+  padding: 25px 35px;
+  background: $white;
+  box-shadow: 0px 8px 50px rgba(5, 104, 57, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  // transition: transform 0.1s ease-out;
+  position: relative;
+
+  &:hover {
+    // text-decoration: none;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(5, 104, 57, 0.1);
+
+    & > .doctor-card__button-wrapper {
+      max-height: 80px;
+      padding-bottom: 25px;
+      padding-top: 5px;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+    width: 285px;
+  }
+
+  &__image-wrapper {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    border: 3px solid $white;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 10px #05683930);
+  }
+
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    color: $primary-text;
+  }
+  &__details {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba($primary-text, 0.7);
+  }
+  &__location {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: $green;
+    display: inline-block;
+    text-align: center;
+
+    &-icon {
+      transform: translateY(20%);
+    }
+  }
+
+  &__button-wrapper {
+    max-height: 0;
+    background: $white;
+    box-shadow: 0px 8px 16px rgba(5, 104, 57, 0.1);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
+
+/* doctor details page style here */
+
+.doctor-backbtn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+}
+
+.rtl-dir .doctor-backbtn {
+  transform: rotate(180deg);
+}
+
+.doctor-details {
+  padding-bottom: 70px;
+  @include tablet {
+    display: flex;
+    gap: 40px;
+  }
+  &__left {
+    width: 180px;
+    height: 180px;
+  }
+  &__right {
+    flex: 1;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border: 3px solid $white;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 10px #05683930);
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    @include tablet {
+      font-size: 32px;
+      margin-top: 5px;
+    }
+  }
+  &__details {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba($green, 0.8);
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    color: rgba($primary-text, 0.8);
+  }
+  &__location {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: $green;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 35px;
+
+    &-icon {
+      transform: translateY(20%);
+    }
+  }
+}

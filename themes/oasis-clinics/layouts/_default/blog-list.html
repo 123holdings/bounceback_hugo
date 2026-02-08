@@ -1,0 +1,29 @@
+{{define "main"}}
+<div class="container">
+    <h1 class="doctors-title">{{- .Title | markdownify -}}</h1>
+    <div class="blog-cards">
+        {{ range $index,$card:= .RegularPages}}
+        <div class="blog-card">
+            <a href="{{.RelPermalink}}" class="blog-card__image-wrapper">
+                {{- if fileExists (add `assets/` (printf "%s" $card.Params.title_image)) -}}
+                        {{- $img:= resources.Get  (printf "%s" $card.Params.title_image) -}}
+                        {{- $img_destop:= $img.Resize "webp 1000x" -}}
+                        {{- $img_mobile:= $img.Resize "webp 500x" -}}
+                        <picture>
+                            <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
+                            <source media="(min-width: 576px)" srcset="{{$img_destop.Permalink}}">
+                            <img {{if lt $index 4}}loading="auto"{{else}}loading="lazy"{{end}} decoding="async" class="blog-card__image" src="{{$img_destop.Permalink}}" alt="{{.Title}}">
+                        </picture>
+                {{- end -}}
+                    </a>
+            <div class="blog-card__content">
+                <h2><a class="blog-card__heading" href="{{.RelPermalink}}">{{.Title | markdownify}}</a></h2>
+                <p class="blog-card__text">{{with .Params.excerpt}}{{. | markdownify | emojify }}{{else}}{{.Summary | markdownify | emojify }}{{end}}</p>
+                <a href="{{.RelPermalink}}" class="button button--white">{{.Params.button_name | markdownify}}</a> 
+            </div>
+                     
+        </div>
+        {{end}}
+    </div>
+</div>
+{{end}}

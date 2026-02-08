@@ -1,0 +1,6 @@
+{{define "main"}}
+    <div class="container successfull-container">
+        <p class="successfull-message">{{.Params.message | markdownify}}</p>
+        <a class="button back-to-home" href="{{.Params.button.url | relLangURL}}">{{.Params.button.name | markdownify}}</a>
+    </div>
+{{end}}

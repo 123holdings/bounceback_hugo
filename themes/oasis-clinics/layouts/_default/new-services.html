@@ -1,0 +1,38 @@
+{{define "main"}}
+<section class="clinics-main {{ if eq site.Language.LanguageName "Arabic" }}rtl-dir{{end}}">
+    <div class="container">
+        <main id="clinics-details" class="clinics-details clinics-details__secondary">
+            <div class="services-hero {{ if eq site.Language.LanguageName "Arabic" }}rtl-dir{{end}}">
+                <div class="services-hero__content">
+                    <h1 class="services-hero__title">{{.Title | markdownify}}</h1>
+                    {{if .Params.booking_button.enable}}
+                    <div>
+                        {{$clinics:= .Params.booking_button.clinics | default .Title | replaceRE "&" ","}}
+                        {{$branch:= "all"}}
+                        {{ if eq site.Language.LanguageName "Arabic" }}
+                        {{$branch = "الكل"}}
+                        {{end}}
+                        {{$url:= printf "/service-enquiry/?clinics=%s&branch=%s" $clinics $branch| relLangURL}}
+                        <a  href="{{$url}}" class="button" data-clinics="{{$clinics}}" data-branch="All">{{.Params.booking_button.label | default site.Params.booking_button.label}}</a>
+                    </div>
+                    {{end}}
+                </div>
+                <div class="services-hero__bg-layer"></div>
+                <div class="services-hero__image">
+                    {{- if fileExists (add `assets/` (printf "%s" .Params.title_image)) -}}
+                    {{- $img:= resources.Get  (printf "%s" .Params.title_image) -}}
+                    {{- $img_destop:= $img.Fill "webp 1500x750" -}}
+                    {{- $img_mobile:= $img.Fill "webp 600x330" -}}
+                    <picture>
+                        <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
+                        <source media="(min-width: 576px)" srcset="{{$img_destop.Permalink}}">
+                        <img decoding="async" src="{{$img_destop.Permalink}}" alt="{{.Title}}">
+                    </picture>
+                {{- end -}}
+                </div>
+            </div>
+            {{.Content}}
+        </main>
+    </div>
+</section>
+{{end}}

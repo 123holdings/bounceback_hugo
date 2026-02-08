@@ -1,0 +1,44 @@
+{{ if .enable }}
+<style>
+    @media all and (min-width: 767px) {
+        .home-services::before{
+            background-image: url('{{.image}}');
+        }  
+    } 
+</style>
+<section class="home-services">
+    <div class="container">
+        <h2 class="home-services__heading">{{.heading | markdownify}}</h2>
+        <div class="home-services__content">
+            <div class="swiper1">
+                <div class="home-services__cards swiper-wrapper">
+                    {{ $cards:= .slider }}
+                    {{ range $cards }}
+                    <div class="home-services__card swiper-slide">
+                        {{ $items:= .cards }}
+                        {{ range $items }}
+                        <div class="home-services__card-item">
+                            <div class="home-services__card-image-wrap">
+                            {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
+                                {{- $img:= resources.Get  (printf "%s" .image) -}}
+                                {{- $img_destop:= $img.Resize "webp 40x" -}}
+                                <img class="home-services__card-image" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                            {{- end -}}
+                            </div>
+                            <div class="home-services__text-wrap">
+                                <a href="{{.url | relLangURL}}"><h3 class="home-services__card-heading">{{.heading | markdownify}}</h3></a>
+                                <p class="home-services__card-text">{{.text | markdownify | emojify}}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="home-services__pagination">
+            <div class="swiper-pagination1"></div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,27 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Covid"
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  enable: true
+  image: "/images/covid-bg.webp"
+  text: Health and wellness are not just trending topics, but central to happiness
+    and welfare. We believe that patient education is one of the most important aspects
+    of healthcare. It is our duty to not only care for our patients but also educate
+    them to prevent diseases from unfolding. With so many misleading buzz-type articles
+    frequently appearing on social media and in mainstream press we simplify what
+    lies behind the scenes from our most trusted sources.
+  button: Read More
+  button_url: "/health-tips"
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

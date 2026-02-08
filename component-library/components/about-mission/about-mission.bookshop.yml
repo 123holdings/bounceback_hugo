@@ -1,0 +1,33 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "About-mission"
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  enable: true
+  image: "/images/about-mission.png"
+  image_description: ''
+  title: Mission
+  text: |-
+    Oasis Clinics, Egypt’s leader in patient experience, provides better care to the sick, investigates their problems, and furthers the education of those whose sickness can be prevented.
+
+    To carry out its mission and foster the group practice of medicine, Oasis Clinics:
+  list:
+  - Excels in specialized medical and surgical care supported by comprehensive research
+    and education.
+  - Applies, evaluates and stays up to date with the latest technology.
+  - Attracts the best qualified medical, scientific and support staff.
+  - Excels in service.
+  - Provides efficient access to affordable medical care.
+  - Ensures that Oasis Clinics quality underlies every decision.
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

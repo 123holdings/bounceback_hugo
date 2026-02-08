@@ -1,0 +1,33 @@
+{{define "main"}}
+<div class="container blog-container">
+    <button class="back-btn {{ if eq site.Language.LanguageName "Arabic" }}rtl-dir{{end}}" onclick="goback()" >
+        <svg class="doctor-backbtn" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.04" cx="22.5" cy="22.5" r="22.5" fill="#056839"/>
+            <path d="M25 29L19 23L25 17" stroke="#056839" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <div class="blog-content">
+        <h1 class="blog-heading">{{.Title | markdownify | emojify}}</h1>
+        <p class="blog-info">
+            <span class="blog-author">{{.Params.author}}</span>
+            <span class="blog-dot-separator">
+            </span><span class="blog-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
+        </p>
+        <div class="blog-hero-image-wrapper">
+            {{- if fileExists (add `assets/` (printf "%s" .Params.title_image)) -}}
+            {{- $img:= resources.Get  (printf "%s" .Params.title_image) -}}
+            {{- $img_destop:= $img.Fill "webp 1200x600" -}}
+            {{- $img_mobile:= $img.Fill "webp 750x375" -}}
+            <picture>
+                <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
+                <source media="(min-width: 576px)" srcset="{{$img_destop.Permalink}}">
+                <img decoding="async" class="blog-hero-image" src="{{$img_destop.Permalink}}" alt="{{.Title}}">
+            </picture>
+            {{- end -}}
+        </div>
+        <div class="blog-main-content">
+            {{.Content}}
+        </div>
+    </div>
+</div>
+{{end}}

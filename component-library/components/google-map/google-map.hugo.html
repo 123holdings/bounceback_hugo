@@ -1,0 +1,131 @@
+{{ if .enable }}
+<section class="home-map">
+    <div id="map" class="home-map__frame-wrap">
+        <!-- <iframe class="home-map__frame" id="map-iframe" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCZm4wZw5HIeijRXBLUb5pYU_rPWjmUvyI&q=Karma 1 Office Building، Above Al Ahli Bank of Kuwait، 2nd Floor، Sheikh Zayed، Giza Governorate, Egypt&center=30.024,30.999" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="home-map__details">
+        <div class="home-map__address-cards">
+            {{ range .locations}}
+            <div class="home-map__address-card">
+                <h3 class="home-map__address-heading">{{.heading | markdownify}}</h3>
+                <address class="home-map__address home-map__address--long">{{.address | markdownify}}</address>
+                {{with .telephone}}
+                <div class="home-map__telephone">tel: 
+                    {{$lastIndex:= sub (len .) 1}}
+                    {{range $index,$item:= .}}
+                    <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
+                    {{if ne $index $lastIndex }}
+                    <span></span>
+                    {{end}}
+                    {{end}}
+                </div>
+                {{end}}
+                {{with .mobile}}
+                <div class="home-map__telephone">mob: 
+                    {{$lastIndex:= sub (len .) 1}}
+                    {{range $index,$item:= .}}
+                    <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
+                    {{if ne $index $lastIndex }}
+                    <span></span>
+                    {{end}}
+                    {{end}}
+                </div>
+                {{end}}
+            </div>
+            {{end}}
+        </div>
+    </div>
+</section> 
+
+<script> 
+    let locations= [
+    {{- range $index,$location:= .locations -}}
+    
+    {{- if gt $index 0 -}},{{end}}{lat: {{ $location.co_oridinate.lat }} ,lng: {{ $location.co_oridinate.lng }}}
+
+    {{- end -}}
+    ]
+
+    let contentString = [];
+    const heading = [];
+    const address = [];
+    const url = [];
+    {{- range $index,$location:= .locations -}}
+    heading.push({{$location.heading}});
+    address.push({{$location.address}});
+    url.push({{$location.mapURL}});
+    {{- end -}}
+    
+    for(let i=0;i<locations.length;i++){
+        contentString.push('<div id="map-infowindow">' + '<a href="/"">' + heading[i] + '</a>' + '<p>' + address[i] + '</p>' + `<a target="_blank" href="${url[i]}" class="googlemap-linkup">` + " View on Google Maps " + '</a>' + '</div>');
+    }
+
+    let map;
+    console.log(locations)
+
+    function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: locations[0].lat, lng: locations[0].lng },
+        zoom: 16,
+
+    });
+
+        
+        const markers = locations.map((position, i) => {
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString[i],
+        });
+        const marker = new google.maps.Marker({
+            map,
+            position,
+            label: { text: "H" , color: "white" },
+        });
+
+        // markers can only be keyboard focusable when they have click listeners
+        // open info window when marker is clicked
+        marker.addListener("click", () => {
+            infowindow.open({
+                anchor: marker,
+                map,
+                shouldFocus: false,
+            });
+        });
+
+        return marker;
+        });
+
+    // Add a marker clusterer to manage the markers.
+    // new MarkerClusterer({ markers, map });
+    triggeringLocations()
+
+    
+    }
+    function triggeringLocations(){
+        const clickableElements = document.querySelectorAll('.home-map__address-card')
+        
+                clickableElements.forEach((clickableElement,index)=>{
+                    // Setup the mouse over event listeners
+                    clickableElement.addEventListener("click", () => {                 
+                    if(index === 0){
+                        map.setZoom(16);
+                        map.setCenter({ lat: locations[0].lat, lng: locations[0].lng });
+
+                    }else if(index === 1){
+                        map.setZoom(16);
+                        map.setCenter({ lat: locations[1].lat, lng: locations[1].lng });
+                    }else{
+                        map.setZoom(16);
+                        map.setCenter({ lat: locations[2].lat, lng: locations[2].lng });
+                    }
+                    
+                    })  
+                });
+    }
+
+    window.initMap = initMap;
+    </script>
+
+<script loading="async" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChBAlwOJ2bvWGbmCxzCah7H5dlKTwuT8w&callback=initMap">
+</script>
+
+{{ end }}

@@ -1,0 +1,80 @@
+.about-hero {
+    background-image: url("/images/about-hero-bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 267px;
+    @include tablet {
+        min-height: 380px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 267px;
+        @include tablet {
+          min-height: 380px;
+        }
+    }
+    &__heading {
+        color: $white;
+        font-weight: 500;
+        font-size: $h2-md;
+        margin-top: 0;
+        @include tablet {
+          font-size: $h1;
+        }
+    }
+    
+}
+
+.about{
+  &__heading {
+    font-weight: 600;
+    @include tablet {
+      font-size: 32px ;
+    }
+  }
+  &__details {
+    color: rgba(#011A0E, 0.8);
+    font-weight: 400;
+    font-size: 14px;
+    p {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 8px;
+      margin-left: 16px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        background-color: #7FBC03;
+        border-radius: 2px;
+        top: 8px;
+        left: -16px; 
+      }
+    }
+  }
+}
+.arabic .about__details {
+  li {
+    margin-bottom: 8px;
+    margin-right: 16px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      background-color: #7FBC03;
+      border-radius: 2px;
+      top: 8px;
+      right: -16px;
+    }
+  }
+}

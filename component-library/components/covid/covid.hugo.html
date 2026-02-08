@@ -1,0 +1,13 @@
+{{ if .enable }}
+<section class="covid" style="background-image: url({{.image}});">
+    <div class="container">
+        <div class="covid__content">
+            <div class="covid__text-wrap">
+                <div class="covid__text">{{.text | markdownify | emojify}}</div>
+                <a class="button covid__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+            </div>
+            <div class="covid__bg-image"></div>
+        </div>
+    </div>
+</section>
+{{ end }}

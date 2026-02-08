@@ -1,0 +1,13 @@
+{{ if .enable }}
+<section class="about-hero">
+    <div class="container">
+        <div class="about-hero__wrapper">
+            <div >
+                <h1 class="about-hero__heading">{{.heading | markdownify}}</h1>
+                <a class="button about-hero__button" href="{{.button_url | relLangURL}}">{{.button_text | markdownify}}</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{{ end }}

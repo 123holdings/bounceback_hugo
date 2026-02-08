@@ -1,0 +1,215 @@
+<!-- navigation -->
+<div class="header-height-fix"></div>
+<header class="header" id="js-header"> 
+  <div class="header__top">
+    <div class="container">
+
+      <!-- top header -->
+      <div class="header__info">
+        {{- with site.Params.contact_info -}}
+            <div class="header__info-left">
+
+              {{- with .opening_hours -}}
+              <p class="header__time"><time>{{.| markdownify | emojify}}</time>
+              <svg class="header__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path opacity="0.5" d="M8 4V8L10.6667 9.33333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </p>
+              {{- end -}}
+
+              {{- with .phone -}}
+              {{- range $index,$item:= . -}}
+              
+               {{ $tel := replace $item "-" "" }}
+              <a href="tel:{{$tel}}" class="header__phone-number">{{.}}
+              <svg class="header__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M14.6667 11.28V13.28C14.6675 13.4657 14.6294 13.6494 14.555 13.8195C14.4807 13.9897 14.3716 14.1424 14.2348 14.2679C14.0979 14.3934 13.9364 14.489 13.7605 14.5485C13.5847 14.6079 13.3983 14.63 13.2134 14.6133C11.1619 14.3904 9.19137 13.6894 7.46004 12.5667C5.84926 11.5431 4.48359 10.1774 3.46004 8.56665C2.33336 6.82745 1.6322 4.84731 1.41337 2.78665C1.39671 2.60229 1.41862 2.41649 1.4777 2.24107C1.53679 2.06564 1.63175 1.90444 1.75655 1.76773C1.88134 1.63102 2.03324 1.52179 2.20256 1.447C2.37189 1.37221 2.55493 1.33349 2.74004 1.33332H4.74004C5.06357 1.33013 5.37723 1.4447 5.62254 1.65567C5.86786 1.86664 6.02809 2.15961 6.07337 2.47998C6.15779 3.12003 6.31434 3.74847 6.54004 4.35332C6.62973 4.59193 6.64915 4.85126 6.59597 5.10057C6.5428 5.34988 6.41928 5.57872 6.24004 5.75998L5.39337 6.60665C6.34241 8.27568 7.72434 9.65761 9.39337 10.6067L10.24 9.75998C10.4213 9.58074 10.6501 9.45722 10.8994 9.40405C11.1488 9.35088 11.4081 9.37029 11.6467 9.45998C12.2516 9.68568 12.88 9.84224 13.52 9.92665C13.8439 9.97234 14.1396 10.1355 14.3511 10.385C14.5625 10.6345 14.6748 10.953 14.6667 11.28Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>            
+              </a>
+              
+              {{- end -}}
+              {{- end -}}
+
+              {{- with .email -}}
+                {{- range $index,$item:= . -}}
+                  {{- if eq $index 0 -}}
+                  <p class="header__email">{{. |markdownify}}
+                  <svg class="header__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M2.66671 2.66675H13.3334C14.0667 2.66675 14.6667 3.26675 14.6667 4.00008V12.0001C14.6667 12.7334 14.0667 13.3334 13.3334 13.3334H2.66671C1.93337 13.3334 1.33337 12.7334 1.33337 12.0001V4.00008C1.33337 3.26675 1.93337 2.66675 2.66671 2.66675Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.5" d="M14.6667 4L8.00004 8.66667L1.33337 4" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>           
+                  </p>
+                  {{- end -}}
+                {{- end -}}
+              {{- end -}}
+            </div>
+            {{- end -}}
+            <div class="header__info-right">
+              {{$list:= site.Menus.topmenu}}
+              {{$len := (len $list)}}
+              {{ range  $index,$element:= $list}}
+            <a href="{{if findRE `^#` $element.URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ $element.URL }}{{else}}{{$element.URL | relLangURL}}{{end}}" class="header__info-link header__info-link--border">{{$element.Name}}</a>
+
+            {{if ne (add $index 1) $len}}
+            <div class="header__vl"></div>
+            {{end}}
+            {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- main navigation header -->
+    <nav class="header__main">
+          <div class="container">
+          <!-- logo -->
+          <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+            {{ $logoPath:= site.Params.logo }}
+            {{ $logoWidth:= replace site.Params.logo_width "px" "px" }}
+    
+            <!-- checking logo existance -->
+            {{ if $logoPath }}
+            {{ if fileExists (add `assets/` $logoPath) }}
+            {{ $logo:= resources.Get $logoPath }}
+    
+            <!-- checking gif -->
+            {{ $logoExt := path.Ext $logo }}
+            {{ if eq $logoExt ".gif" }}
+            {{ .Scratch.Set "logo" ($logo.Resize $logoWidth).RelPermalink }}
+            <!-- checking svg -->
+            {{ else if eq $logoExt ".svg"}}
+            {{ .Scratch.Set "logo" $logo.RelPermalink }}
+            <!-- logo fallback for svg -->
+            {{ .Scratch.Set "logo_fallback" $logo.RelPermalink }}
+            {{ else }}
+            <!-- logo processing to webp -->
+            {{ $logoDefaultWidth:= add (string $logo.Width) "x"}}
+            {{ $logoWidth:= $logoWidth | default $logoDefaultWidth }}
+            {{ $options := add (string $logoWidth) " webp" }}
+            {{ .Scratch.Set "logo" ($logo).RelPermalink }}
+            <!-- logo fallback -->
+            {{ .Scratch.Set "logo_fallback" ($logo.Resize $logoWidth).RelPermalink }}
+            {{ end }}
+    
+            <img loading="prelaod" decoding="async" class="img-fluid" src="{{.Scratch.Get `logo`}}"
+              alt="{{ site.Title }}">
+            {{ end }}
+            <!-- logo text -->
+            {{ else if site.Params.logo_text }}
+            {{ site.Params.logo_text | markdownify }}
+            <!-- logo title -->
+            {{ else }}
+            {{ site.Title | markdownify }}
+            {{ end }}
+          </a>
+
+          <!-- nav toggle icon -->
+
+          <div class="header__nav-toggle" onclick="togglemenu()">
+            <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1H22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 9H22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 17H22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- main navigaiton items -->
+            <ul class="main-nav">
+              {{ $currentPage := . }}
+              {{$section:= .Section}}
+              {{ range site.Menus.main }}
+              {{ $name:= .Name | lower}}
+              {{ $menuURL := .URL | absLangURL }}
+              {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+              {{ $active := eq $menuURL $pageURL }}
+              {{ $active = or $active (eq $currentPage.Section $name)}}
+              
+              <li class="main-nav__item">
+                <a class="main-nav__link {{if $active}}main-nav__link--active{{end}}" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
+                      href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}">{{.Name}}</a>
+              </li>         
+              {{ end }}
+          </ul>
+        <!-- right part of main header -->
+      {{with site.Params.primary_button}}
+        {{if .enable}}
+        <a href="{{.link | absLangURL}}" class="button button-desktop">{{.label}}</a>
+        {{end}}
+      {{end}}
+      </div>
+    </nav>
+
+    <!-- main nav for mobile -->
+    <div class="header__mobile-nav" id="jsDropdownMenu">
+      <!-- main navigaiton items -->
+      <ul class="main-nav main-nav--mobile ">
+        {{ $currentPage := . }}
+        {{ range site.Menus.main }}
+        {{ $menuURL := .URL | absLangURL }}
+        {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+        {{ $active := eq $menuURL $pageURL }} 
+          <li class="main-nav__item">
+            <a class="main-nav__link" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
+              href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
+          </li>         
+        {{ end }}
+      </ul>
+      <!-- right part of main header -->
+      {{with site.Params.primary_button}}
+        {{if .enable}}
+        <a href="{{ .link | absLangURL}}" class="button button-mobile">{{ i18n .label}}</a>
+        {{end}}
+      {{end}}
+      <div class="header__info-wrapper">
+        <div class="header__info header__info--mobile {{ if eq site.Language.LanguageName "Arabic" }}lang-sign-left{{end}}">
+
+          {{- with site.Params.contact_info -}}
+          <div class="header__info-left header__info-left--mobile">
+            {{- with .opening_hours -}}
+            <p class="header__time"><time>{{.| markdownify | emojify}}</time>
+            <svg class="header__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              <path opacity="0.5" d="M8 4V8L10.6667 9.33333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </p>
+          {{end}}
+          {{- with .phone -}}
+          {{- range $index,$item:= . -}}
+          {{- if eq $index 0 -}}
+            <a href="tel:{{.}}" class="header__phone-number"><span>{{.}}</span>
+            <svg class="header__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M14.6667 11.28V13.28C14.6675 13.4657 14.6294 13.6494 14.555 13.8195C14.4807 13.9897 14.3716 14.1424 14.2348 14.2679C14.0979 14.3934 13.9364 14.489 13.7605 14.5485C13.5847 14.6079 13.3983 14.63 13.2134 14.6133C11.1619 14.3904 9.19137 13.6894 7.46004 12.5667C5.84926 11.5431 4.48359 10.1774 3.46004 8.56665C2.33336 6.82745 1.6322 4.84731 1.41337 2.78665C1.39671 2.60229 1.41862 2.41649 1.4777 2.24107C1.53679 2.06564 1.63175 1.90444 1.75655 1.76773C1.88134 1.63102 2.03324 1.52179 2.20256 1.447C2.37189 1.37221 2.55493 1.33349 2.74004 1.33332H4.74004C5.06357 1.33013 5.37723 1.4447 5.62254 1.65567C5.86786 1.86664 6.02809 2.15961 6.07337 2.47998C6.15779 3.12003 6.31434 3.74847 6.54004 4.35332C6.62973 4.59193 6.64915 4.85126 6.59597 5.10057C6.5428 5.34988 6.41928 5.57872 6.24004 5.75998L5.39337 6.60665C6.34241 8.27568 7.72434 9.65761 9.39337 10.6067L10.24 9.75998C10.4213 9.58074 10.6501 9.45722 10.8994 9.40405C11.1488 9.35088 11.4081 9.37029 11.6467 9.45998C12.2516 9.68568 12.88 9.84224 13.52 9.92665C13.8439 9.97234 14.1396 10.1355 14.3511 10.385C14.5625 10.6345 14.6748 10.953 14.6667 11.28Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+            </a>
+            {{- end -}}
+            {{- end -}}
+            {{- end -}}
+
+            {{- with .email -}}
+            {{- range $index,$item:= . -}}
+              {{- if eq $index 0 -}}
+            <p class="header__email">{{. |markdownify}}
+            <svg class="header__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M2.66671 2.66675H13.3334C14.0667 2.66675 14.6667 3.26675 14.6667 4.00008V12.0001C14.6667 12.7334 14.0667 13.3334 13.3334 13.3334H2.66671C1.93337 13.3334 1.33337 12.7334 1.33337 12.0001V4.00008C1.33337 3.26675 1.93337 2.66675 2.66671 2.66675Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              <path opacity="0.5" d="M14.6667 4L8.00004 8.66667L1.33337 4" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>           
+            </p>
+            {{- end -}}
+            {{- end -}}
+          {{- end -}}
+          </div>
+          {{end}}
+          <div class="header__info-right">
+            {{$list:= site.Menus.topmenu}}
+            {{$len := (len $list)}}
+            {{ range  $index,$element:= $list}}
+          <a href="{{if findRE `^#` $element.URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ $element.URL }}{{else}}{{$element.URL | relLangURL}}{{end}}" class="header__info-link header__info-link--border">{{$element.Name}}</a>
+          {{end}}
+
+          </div>
+        </div>
+      </div>
+    </div>  
+</header>
+

@@ -1,0 +1,201 @@
+{{ define "main" }}
+
+<div class="container">
+    <!-- back button -->
+    {{ with .Params.heading }}
+        <h1 class="appointment-heading contact__heading">{{ . | markdownify }}</h1>
+        {{ end }}
+    <div class="appointment contact {{ if eq site.Language.LanguageName "Arabic" }}rtl-dir{{end}}">
+        <!-- appointment form  -->
+        {{ with .Params.formData }}
+        <form style="max-width: 650px;"  class="appointment-form contact__form" name="contact_us" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="contact_us" value="contact_us">
+            <!-- Hidden honeypot field -->
+            <input type="text" name="bot-field" style="display: none;" />
+              <!-- Hidden input to store the local time zone -->
+            <input type="hidden" name="timezone" id="timezone">
+            {{ with .name }}
+            <label for="fname" class="appointment-form__name">{{ .label | markdownify }}</label>
+            <input type="text" id="fname" name="fullname" placeholder="{{ .placeholder}}" required>
+            {{ end }}
+            {{ with .email }}
+            <label for="email" class="appointment-form__email">{{ .label | markdownify }}</label>
+            <input type="email" id="email" name="email" placeholder="{{ .placeholder}}" required>
+            {{ end }}
+            {{with .phone}}
+            <label for="phone" class="appointment-form__phone">{{.label | markdownify}}</label>
+            <input type="tel" id="phone" name="phone"  required>
+            <span id="valid-msg" class="hide">✓ Valid</span>
+            <span id="error-msg" class="hide"></span>
+            {{end}}
+            {{with .source}}
+            <label for="source" class="appointment-form__clinics ">{{.label | markdownify}}</label>
+            <div class="custom-select appointment-form__custom-clinics {{ if eq site.Language.LanguageName "Arabic" }}rtl-direct{{end}}">
+                <select name="source" id="source">
+                    <option value="default">{{.label}}</option>
+                    
+                    {{range $index,$option:= .options}}
+                    <option value="{{$option}}">{{$option | markdownify}}</option>
+                    {{end}}
+                    
+                </select>
+            </div>
+            {{end}}
+            {{ with .subject }}
+            <label for="subject" class="appointment-form__name">{{ .label | markdownify }}</label>
+            <input type="text" id="subject" name="subject" placeholder="{{ .placeholder}}" required>
+            {{ end }}
+            {{ with .message }}
+            <label for="message" class="appointment-form__name">{{ .label | markdownify }}</label>
+            <textarea name="message" id="message"  rows="5" placeholder="{{ .placeholder}}"></textarea>
+            {{ end }}
+
+            <div data-netlify-recaptcha="true"></div>
+
+            {{ with .button_name }}
+            <button class="button appointment-button">{{ . | markdownify }}</button>
+            {{ end }}
+        </form>
+        {{ end }}
+
+
+    </div>
+</div>
+{{ with .Params.google_map }}
+    {{ if .enable }}
+    <section class="home-map">
+        <div id="map" class="home-map__frame-wrap">
+        </div>
+        <div class="home-map__details">
+            <div class="home-map__address-cards">
+                {{ range .locations}}
+                <div class="home-map__address-card">
+                    <h3 class="home-map__address-heading">{{.heading | markdownify}}</h3>
+                    <address class="home-map__address home-map__address--long">{{.address | markdownify}}</address>
+                    {{with .telephone}}
+                    <div class="home-map__telephone">tel: 
+                        {{$lastIndex:= sub (len .) 1}}
+                        {{range $index,$item:= .}}
+                        <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
+                        {{if ne $index $lastIndex }}
+                        <span></span>
+                        {{end}}
+                        {{end}}
+                    </div>
+                    {{end}}
+                    {{with .mobile}}
+                    <div class="home-map__telephone">mob: 
+                        {{$lastIndex:= sub (len .) 1}}
+                        {{range $index,$item:= .}}
+                        <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
+                        {{if ne $index $lastIndex }}
+                        <span></span>
+                        {{end}}
+                        {{end}}
+                    </div>
+                    {{end}}
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </section> 
+    <script async> 
+        let locations= [
+        {{- range $index,$location:= .locations -}}
+        
+        {{- if gt $index 0 -}},{{end}}{lat: {{ $location.co_oridinate.lat }} ,lng: {{ $location.co_oridinate.lng }}}
+
+        {{- end -}}
+        ]
+
+        let contentString = [];
+        const heading = [];
+        const address = [];
+        const url = [];
+        {{- range $index,$location:= .locations -}}
+        heading.push({{$location.heading}});
+        address.push({{$location.address}});
+        url.push({{$location.mapURL}});
+        {{- end -}}
+        
+        for(let i=0;i<locations.length;i++){
+            contentString.push('<div id="map-infowindow">' + '<a href="/"">' + heading[i] + '</a>' + '<p>' + address[i] + '</p>' + `<a target="_blank" href="${url[i]}" class="googlemap-linkup">` + " View on Google Maps " + '</a>' + '</div>');
+        }
+
+        let map;
+        console.log(locations)
+    
+        function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: locations[0].lat, lng: locations[0].lng },
+            zoom: 16,
+    
+        });
+
+            
+            const markers = locations.map((position, i) => {
+            const infowindow = new google.maps.InfoWindow({
+                content: contentString[i],
+            });
+            const marker = new google.maps.Marker({
+                map,
+                position,
+                label: { text: "H" , color: "white" },
+            });
+
+            // markers can only be keyboard focusable when they have click listeners
+            // open info window when marker is clicked
+            marker.addListener("click", () => {
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                    shouldFocus: false,
+                });
+            });
+
+            return marker;
+            });
+
+        // Add a marker clusterer to manage the markers.
+        // new MarkerClusterer({ markers, map });
+        triggeringLocations()
+
+        
+        }
+        function triggeringLocations(){
+             const clickableElements = document.querySelectorAll('.home-map__address-card')
+        
+                    // Setup the click event listeners: simply set the map to Chicago.
+                    clickableElements.forEach((clickableElement,index)=>{
+                        clickableElement.addEventListener("click", () => {
+                        // map.setCenter(results[index].geometry.location);
+                        
+                        if(index === 0){
+                            map.setZoom(16);
+                            map.setCenter({ lat: locations[0].lat, lng: locations[0].lng });
+    
+                        }else if(index === 1){
+                            map.setZoom(16);
+                            map.setCenter({ lat: locations[1].lat, lng: locations[1].lng });
+                        }else{
+                            map.setZoom(16);
+                            map.setCenter({ lat: locations[2].lat, lng: locations[2].lng });
+                        }
+                        
+                    })   
+                    });
+        }
+    
+        window.initMap = initMap;
+        </script>
+    
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChBAlwOJ2bvWGbmCxzCah7H5dlKTwuT8w&callback=initMap">
+    </script>
+    {{ end }}
+    {{end}}
+
+
+    {{ partial "form-submission-js-contact.html" .}}
+
+{{ end }}

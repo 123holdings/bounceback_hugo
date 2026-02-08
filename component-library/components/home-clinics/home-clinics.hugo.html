@@ -1,0 +1,40 @@
+{{ if .enable }}
+<section class="home-clinics">
+    <div class="container">
+        <div class="home-clinics__content">
+            <div class="home-clinics__text-wrap">
+                <h2 class="home-clinics__heading">{{.heading | markdownify}}</h2>
+                <p class="home-clinics__text">{{.text | markdownify | emojify}}</p>
+                <a class="button home-clinics__button" href="{{.button_url | relLangURL}}">{{.button | markdownify}}</a>
+            </div>
+            <div class="home-clinics__image-wrap">
+                <div class="home-clinics__slider swiper2">
+                    <div class="home-clinics__cards swiper-wrapper">
+                        {{ range (where (where site.Pages "Type" "clinics") "Params.main_clinic" true)}}
+                        <div  data-url="{{.Permalink}}" data-branch="{{.Params.location}}" data-clinics="{{.Params.services}}" class="clinics-card home-clinics__card swiper-slide">
+                            <div class="home-clinics__image-wrapper">
+                                {{- if fileExists (add `assets/` (printf "%s" .Params.title_image)) -}}
+                                    {{- $img:= resources.Get  (printf "%s" .Params.title_image) -}}
+                                    {{- $img_destop:= $img.Resize "webp 500x" -}}
+                                    {{- $img_mobile:= $img.Resize "webp 170x" -}}
+                                    <picture>
+                                        <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
+                                        <source media="(min-width: 576px)" srcset="{{$img_destop.Permalink}}">
+                                        <img loading="lazy" decoding="async" class="clinics-card__image" src="{{$img_destop.Permalink}}" alt="{{.Title}}">
+                                    </picture>
+                                {{- end -}}
+                            </div>
+                            <h2 class="clinics-card__title home-clinics__card-title">{{.Title | markdownify | emojify}}</h2>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="home-clinics__navigation">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

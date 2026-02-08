@@ -1,0 +1,157 @@
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png"
+# logo
+logo = "images/bouncebackrecovery-logo-transparent.png"
+# use `x` with logo_width, example: "100x"
+logo_width = ""
+# logo text will only show when logo is missing.
+logo_text = "Oasis Clinics"
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "Oasis clinics"
+image = "/images/oasis-clinics-logo.png" # this image will be used as fallback if a page has no image of its own
+
+# footer information
+footer_info = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
+
+# contact form action
+contact_form_action = "https://formspree.io/f/xgernlzd" # contact form works with https://formspree.io
+
+# career form action
+career_form_action = "#" # career form works with https://formspree.io
+
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script= "" 
+
+# Main Sections
+mainSections= ["blog"]
+
+# contact information
+[contact_info]
+phone = ["314-690-3009","1-636-333-0030"]
+email = ["info@bouncebackdata.com"]
+opening_hours = "24/7"
+
+# address info for contact page
+[address_info]
+phone_one = "314-690-3009"
+phone_two = "1-636-333-0030"
+location = "151 New York Ave, Hartford, CT 87329 United States"
+
+# imaging processing
+[imaging]
+# Default JPEG or WebP quality setting. Default is 100.
+quality = 100
+
+# Preloader
+[preloader]
+enable = true
+preloader = "images/favicon.png" # use jpg, png, svg or gif format.
+
+# Navigation button
+[primary_button]
+enable = true
+label = "Recover Now"
+link = "/start-my-recovery/"
+
+[booking_button]
+label = "Book Appointment"
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+# call-to-action
+[cta]
+enable = true
+title = "Helping teams in the world with focus"
+content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
+button = "Download The Theme"
+button_link = "/"
+
+############################# contact page social site ########################
+[[contact]]
+title = "facebook"
+icon = "images/facebook-green.svg"
+link = "https://www.facebook.com/oasisclinics"
+
+[[contact]]
+title = "linkedin"
+icon = "images/linkedin-green.svg"
+link = "https://www.linkedin.com/company/oasis-clinics/"
+
+[[contact]]
+title = "twitter"
+icon = "images/twitter-green.svg"
+link = "https://twitter.com/oasisclinics"
+
+[[contact]]
+title = "youtube"
+icon = "images/youtube-green.svg"
+link = "https://www.youtube.com/channel/UCDKbcwNDxuEqJ3PinMGP75w"
+
+[[contact]]
+title = "instagram"
+icon = "images/instagram-green.svg" # https://icons8.com/line-awesome
+link = "https://www.instagram.com/oasis_clinics/"
+
+
+############################# social site ########################
+[[social]]
+title = "facebook"
+icon = "images/facebook.svg"
+link = "https://www.facebook.com/oasisclinics"
+
+[[social]]
+title = "linkedin"
+icon = "images/linkedin.svg"
+link = "https://www.linkedin.com/company/oasis-clinics/"
+
+[[social]]
+title = "twitter"
+icon = "images/twitter.svg"
+link = "https://twitter.com/oasisclinics"
+
+[[social]]
+title = "youtube"
+icon = "images/youtube.svg"
+link = "https://www.youtube.com/channel/UCDKbcwNDxuEqJ3PinMGP75w"
+
+[[social]]
+title = "instagram"
+icon = "images/instagram.svg" # https://icons8.com/line-awesome
+link = "https://www.instagram.com/oasis_clinics/"
+
+
+# footer info
+
+footer_info = "Oasis Clinics, Egypt’s leader in patient experience, provides better care of the sick, investigates their problems, and furthers education of those whose sickness can be prevented."
+
+copyright_text = "Oasis Clinics"
+cookie_banner_text ="We use cookies to improve your experience and analyze site traffic. You can Accept All or Customize Preferences to control them. Learn more in our [Privacy & Cookies Policy](/privacy-cookies-policy/)"
+
+[privacy_button]
+    label = "Privacy Policy"
+    link = "/privacy-cookies-policy/"
+
+[cookies_setting]
+    label = "Cookie Setting"
+
+[accept_cookies_button]
+    label = "Accept all"
+
+[customize_cookies_button]
+    label = "Customize"
+
+[cookie_settings]
+    heading = "Manage Cookie Preferences"
+    save_button = "Save Preferences"
+
+[cookie_settings.categories]
+    necessary = "Necessary cookies"
+    analytics = "Analytics cookies"
+    marketing = "Marketing cookies"

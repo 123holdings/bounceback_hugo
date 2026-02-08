@@ -1,0 +1,90 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "Data Recovery"
+url = "data-recovery-services/"
+weight = 4
+
+[[main]]
+name = "Data Security"
+url = "data-security/"
+weight = 5
+
+[[main]]
+name = "Digital Forensics"
+url = "data-forensics/"
+weight = 7
+  
+[[main]]
+name = "Why Choose Us"
+url = "why-choose-us/"
+weight = 15
+
+[[main]]
+name = "Support"
+url = "support/"
+weight = 20
+
+
+[[main]]
+name = "Contact Us"
+url = "contact-us/"
+weight = 25
+
+# top menus
+[[topmenu]]
+name = "careers"
+url = "company/careers/"
+weight = 1
+[[topmenu]]
+name = "Our Credentials"
+url = "company/our-credentials/"
+weight = 2
+[[topmenu]]
+name = "Blog"
+url = "/blog/"
+weight = 3
+
+# footer menus
+
+#contact us
+[[services]]
+  name = "Start My Recovery"
+  url = "/start-my-recovery/"
+  weight = 2
+[[services]]
+  name = "Company"
+  url = "company"
+  weight = 3
+[[services]]
+  name = "Resource Library"
+  url = "#"
+  weight = 4
+[[services]]
+  name = "Locations"
+  url = "#"
+  weight = 4
+
+#important links
+[[important_links]]
+  name = "Data Recovery Home"
+  url = "#"
+  weight = 1
+[[important_links]]
+  name = "eDiscovery Services"
+  url = "#"
+  weight = 2
+[[important_links]]
+  name = "ESI Forensics"
+  url = "#"
+  weight = 3
+[[important_links]]
+  name = "Data Security"
+  url = "#"
+  weight = 4

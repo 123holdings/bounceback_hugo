@@ -1,0 +1,131 @@
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-banner-content">
+    <p>
+        {{site.Params.cookie_banner_text| markdownify}}
+    </p>
+    <div class="cookie-buttons">
+      <button class="btn btn-accept" onclick="acceptAll()">{{site.Params.accept_cookies_button.label}}</button>
+      <button class="btn btn-manage" onclick="openSettings()">{{site.Params.customize_cookies_button.label}}</button>
+    </div>
+  </div>
+</div>
+
+<div id="cookie-settings" class="cookie-settings">
+  <h3>{{ site.Params.cookie_settings.heading }}</h3>
+
+  <div class="cookie-option">
+    <label>
+      <input type="checkbox" id="necessary-checkbox" checked disabled>
+      {{ site.Params.cookie_settings.categories.necessary }}
+    </label>
+  </div>
+
+  <div class="cookie-option">
+    <label>
+      <input type="checkbox" id="analytics-checkbox" checked>
+      {{ site.Params.cookie_settings.categories.analytics }}
+    </label>
+  </div>
+
+  <div class="cookie-option">
+    <label>
+      <input type="checkbox" id="marketing-checkbox" checked>
+      {{ site.Params.cookie_settings.categories.marketing }}
+    </label>
+  </div>
+  <button class="btn btn-save" onclick="saveSettings()">
+  {{ site.Params.cookie_settings.save_button }}
+  </button>
+</div>
+
+
+<script>
+    const CONSENT_KEY = "oasis_cookie_consent";
+
+    // Push consent to GTM and gtag
+    function pushConsentToGTM(analytics, marketing) {
+    const analyticsStatus = analytics ? 'granted' : 'denied';
+    const marketingStatus = marketing ? 'granted' : 'denied';
+
+    // Update Google Consent Mode
+    if(typeof gtag === "function") {
+        gtag('consent', 'update', {
+        ad_storage: marketingStatus,
+        analytics_storage: analyticsStatus,
+        ad_user_data: marketingStatus,
+        ad_personalization: marketingStatus
+        });
+    }
+
+    // Notify GTM via dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'consent_update_event',
+        analytics_consent: analyticsStatus,
+        marketing_consent: marketingStatus
+    });
+    }
+
+    // Show cookie settings popup
+    function openSettings() {
+    const saved = JSON.parse(localStorage.getItem(CONSENT_KEY)) || { analytics: true, marketing: true };
+    document.getElementById('analytics-checkbox').checked = saved.analytics;
+    document.getElementById('marketing-checkbox').checked = saved.marketing;
+    document.getElementById('cookie-settings').style.display = 'block';
+    }
+
+    // Hide banner with slide-down animation
+    function hideBanner() {
+    const banner = document.getElementById('cookie-banner');
+    banner.classList.remove('show');
+    banner.classList.add('hide');
+    banner.addEventListener('animationend', () => {
+        banner.style.display = 'none';
+        banner.classList.remove('hide');
+    }, { once: true });
+    }
+
+    // Save settings
+    function saveSettings() {
+    const analytics = document.getElementById('analytics-checkbox').checked;
+    const marketing = document.getElementById('marketing-checkbox').checked;
+    const consent = { analytics, marketing };
+    localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
+
+    pushConsentToGTM(analytics, marketing);
+
+    document.getElementById('cookie-settings').style.display = 'none';
+    hideBanner();
+    }
+
+    // Accept all
+    function acceptAll() {
+    const consent = { analytics: true, marketing: true };
+    localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
+    pushConsentToGTM(true, true);
+    const settings = document.getElementById('cookie-settings');
+    if(settings.style.display === 'block'){
+        settings.style.display = 'none'
+    }
+    hideBanner();
+    }
+
+    // Initialize banner on page load
+    (function() {
+    const saved = JSON.parse(localStorage.getItem(CONSENT_KEY));
+    
+    if(saved) {
+        // If consent already given, push it to GTM immediately
+        pushConsentToGTM(saved.analytics, saved.marketing);
+    } else {
+        // Show banner after 2 seconds
+        window.addEventListener('load', () => {
+        setTimeout(() => {
+            const banner = document.getElementById('cookie-banner');
+            banner.classList.add('show'); // triggers slide-in animation
+        }, 1500); // 2000ms = 2 seconds
+        });
+    }
+    })();
+
+</script>

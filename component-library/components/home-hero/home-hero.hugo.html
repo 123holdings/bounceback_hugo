@@ -1,0 +1,24 @@
+{{ if .enable }}
+<section class="hero">
+    <div class="container">
+        <div class="swiper hero__slider">
+            <div class="swiper-wrapper hero__slider-wrapper">
+                {{ $slide:= .slide_items }}
+                {{ range $slide }}
+                <div class="swiper-slide hero__slide-item">
+                    <div class="hero__slide">
+                        <h1 class="hero__heading">{{.heading | markdownify}}</h1>
+                        <p class="hero__schedule">{{.schedule | markdownify}}</p>
+                        <a class="button hero__button" href="tel:{{.button_url}}">{{.button | markdownify}}</a>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="hero__pagination">
+         <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+{{ end }}
