@@ -76,98 +76,25 @@ content_blocks:
     button: Read More
     button_url: /why-choose-us/
   - _bookshop_name: home-services
-    enable: false
-    heading: BounceBack Data Recovery
-    image: /images/home_services-green.webp
+    enable: true
+    heading: What clients say about us
+    image: /images/google review.jpeg
     slider:
       - cards:
-          - image: /images/Cardiac.png
-            image_description: Cardiac Diagnostic Lab icon
-            heading: Cardiac Diagnostic Lab
-            text: >-
-              Electrophysiology (heart rhythm irregularities),
-              Electrocardiography (ECG), Echocardiography & vascular duplex,
-              Treadmill test, Home 24 hr ECG (Holter) & blood pressure
-              recording.
-            url: /services/cardiac-diagnostic-lab/
-          - image: /images/Check Up.png
-            image_description: Check Up Program icon
-            heading: Check Up Program
-            text: >-
-              Get an appointment for your annual check-up. Early detection of
-              possible illnesses is the best treatment.
-            url: /services/check-up-program/
-          - image: /images/Endoscopy Unit.png
-            image_description: Endoscopy Unit icon
-            heading: Endoscopy Unit
-            text: >-
-              Latest technology in fiber optic imaging of the gastrointestinal
-              tract. Performed by Profs & experienced consultants. Various
-              endoscopic surgical proc
-            url: /services/endoscopy-unit/
-          - image: /images/Laboratory.png
-            image_description: Laboratory icon
-            heading: Laboratory
-            text: >-
-              NSA Labs provide full lab services as well as home visits from 10
-              am to 10 pm.
-            url: /services/laboratory/
+          - image: images/google-review-susanTaylor.png
+            image_description: "google-review-susanTaylor"
+            url: https://maps.app.goo.gl/cNsqnFU5ZSWvVEuX7
+            button_label: See on Gooogle Review
       - cards:
-          - image: /images/Skin Laser.png
-            image_description: Skin Laser Unit icon
-            heading: Skin Laser Unit
-            text: >-
-              Cosmetic laser therapy, hair removal and resurfacing, Treatment
-              for wrinkles, fine Lines & acne scars, Cautery & Cryotherapy
-            url: /services/skin-laser-unit/
-          - image: /images/Surgical.png
-            image_description: Surgical Center icon
-            heading: Surgical Center
-            text: >-
-              Oasis Clinics is proud to announce its brand new Surgical Center
-              for day case surgeries. What makes Oasis Clinics Surgical Center
-              Unique?
-            url: /services/surgical-center/
-          - image: /images/Ultrasound.png
-            image_description: Ultrasound Unit icon
-            heading: Ultrasound Unit
-            text: >-
-              The most up to date equipment diagnosing Abdominal, Pelvic,
-              Vascular, Cardiac, Obstetrics and Gynecological problems.
-            url: /services/ultrasound-unit/
+          - image: images/google-review-carrie-west.png
+            image_description: "google-review-susanTaylor"
+            url: https://maps.app.goo.gl/4qvAGP7UwF1ZK8Zq6
+            button_label: See on Gooogle Review
       - cards:
-          - image: /images/Audiology.png
-            image_description: Audiology / Phoniatrics icon
-            heading: Audiology / Phoniatrics
-            text: >-
-              Audiology & Hearing - The specialists of Audiology are
-              uncompromising in their commitment to success. The daily priority
-              is a combination of precision
-            url: /services/audiology-phoniatric/
-          - image: /images/EEG & Neurophysiology.png
-            image_description: EEG & Neurophysiology Investigation icon
-            heading: EEG & Neurophysiology Investigation
-            text: >-
-              Clinical neurophysiology departments provide a range of
-              investigations including electroencephalography (EEG), nerve
-              conduction studies (NCS) with electromyography (EMG), and evoked
-              potentials (EP). These investigations constitute the largest part
-              of a clinical neurophysiologist’s workload.
-            url: /services/eeg-neurophysiology-investigation/
-          - image: /images/Obstetrics.png
-            image_description: Obstetrics & Gynecology Services icon
-            heading: Obstetrics & Gynecology Services
-            text: >-
-              Our obstetrics and gynecology team is dedicated to meeting the
-              complete healthcare needs of women.
-            url: /services/obstetrics-gynecology-services/
-          - image: /images/Physiotherapy.png
-            image_description: Physiotherapy Rehabilitation icon
-            heading: Physiotherapy Rehabilitation
-            text: >-
-              The physiotherapist uses their knowledge and skills to improve a
-              range of conditions associated with different systems of the body.
-            url: /services/physiotherapy-rehabilitation/
+          - image: images/google-review-scott-thomas.png
+            image_description: "google-review-susanTaylor"
+            url: https://maps.app.goo.gl/59xCKZCfWRtp8GcR6
+            button_label: See on Gooogle Review
   - _bookshop_name: home-clinics
     enable: false
     heading: Our Clinics

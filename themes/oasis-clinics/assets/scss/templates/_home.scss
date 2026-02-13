@@ -11,7 +11,7 @@
 
   &__pagination {
     @include tablet {
-      position: absolute;
+      position: absolute !important;
       left: 45px;
       top: 0;
       bottom: 0;
@@ -317,7 +317,6 @@
     @include tablet {
       padding-right: 50px;
       grid-column: span 6;
-      display: flex;
       gap: 15px;
       margin-bottom: 0;
     }
@@ -332,6 +331,9 @@
       margin: inherit;
       margin-top: 15px;
     }
+  }
+  &__card-image{
+    width: 100%;
   }
 
   &__text-wrap{
@@ -817,4 +819,11 @@
 .hero > * {
     position: relative;
     z-index: 2;  /* keep content above overlay */
+}
+
+.button-wrapper{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

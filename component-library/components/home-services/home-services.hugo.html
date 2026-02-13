@@ -21,15 +21,16 @@
                             <div class="home-services__card-image-wrap">
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
-                                {{- $img_destop:= $img.Resize "webp 40x" -}}
-                                <img class="home-services__card-image" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                                
+                                <a href="{{.url }}"><img class="home-services__card-image" src="{{$img.Permalink}}" alt="{{.image_description}}"></a>
                             {{- end -}}
                             </div>
-                            <div class="home-services__text-wrap">
-                                <a href="{{.url | relLangURL}}"><h3 class="home-services__card-heading">{{.heading | markdownify}}</h3></a>
-                                <p class="home-services__card-text">{{.text | markdownify | emojify}}</p>
+                            <div class="button-wrapper">
+                                <a class="button button-desktop" href="{{.url }}">{{.button_label | markdownify}}</a>
                             </div>
                         </div>
+
+                        
                         {{ end }}
                     </div>
                     {{ end }}
