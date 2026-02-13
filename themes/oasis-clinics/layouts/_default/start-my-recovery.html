@@ -1,0 +1,94 @@
+{{ define "main" }}
+
+<div class="container">
+    <!-- back button -->
+    <button onclick="goback()" class="back-btn {{ if eq site.Language.LanguageName "Arabic" }}rtl-dir{{end}}" >
+        <svg class="doctor-backbtn" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.04" cx="22.5" cy="22.5" r="22.5" fill="#056839"/>
+            <path d="M25 29L19 23L25 17" stroke="#056839" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <div class="appointment">
+        <div class="appointment-hero">
+            <h1 class="appointment-heading">{{.Title | markdownify}}</h1>
+            <p class="appointment-text">{{.Params.text | markdownify}}</p>
+        </div>
+        {{with .Params.formData}}
+        <!-- appointment form  -->
+        <form  class="appointment-form" name="appointments" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="appointments" value="appointments">
+            <!-- Hidden honeypot field -->
+            <input type="text" name="bot-field" style="display: none;" />
+
+            <input type="hidden" name="timezone" id="timezone"> 
+    
+            {{with .name}}
+            <label for="fname" class="appointment-form__name">{{.label | markdownify}}</label>
+            <input type="text" id="fname" name="fullname" placeholder="Full name" required>
+            {{end}}
+    
+            {{with .email}}
+            <label for="email" class="appointment-form__email">{{.label | markdownify}}</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required>
+            {{end}}
+    
+            {{with .phone}}
+            <label for="phone" class="appointment-form__phone">{{.label | markdownify}}</label>
+            <input  type="tel" id="phone" name="phone"  required>
+            <span id="valid-msg" class="hide">✓ Valid</span>
+            <span id="error-msg" class="hide"></span>
+            {{end}}
+
+            {{/* 
+            {{with .source}}
+            <label for="source" class="appointment-form__clinics ">{{.label | markdownify}}</label>
+            <div class="custom-select appointment-form__custom-clinics {{ if eq site.Language.LanguageName "Arabic" }}rtl-direct{{end}}">
+                <select name="source" id="source">
+                    <option value="default">{{.label}}</option>
+                    
+                    {{range $index,$option:= .options}}
+                    <option value="{{$option}}">{{$option | markdownify}}</option>
+                    {{end}}
+                    
+                </select>
+            </div>
+            {{end}}
+            */}}
+
+            {{with .hard_drive_model}}
+            <label for="hard_drive_model" class="appointment-form__name">{{.label | markdownify}}</label>
+            <input type="text" id="hard_drive_model" name="hard_drive_model" placeholder="Hard drive model">
+            {{end}}
+
+            {{with .data_loss_scenario}}
+            <label for="data_loss_scenario" class="appointment-form__name">{{.label | markdownify}}</label>
+            <input type="text" id="data_loss_scenario" name="data_loss_scenario" placeholder="Data loss scenario" required>
+            {{end}}
+
+            {{ with .recovery_details}}
+            <label for="recovery_details" class="appointment-form__name">
+            {{ .label | markdownify }}
+            </label>
+
+            <textarea
+            id="recovery_details"
+            name="recovery_details"
+            placeholder="Recovery details"
+            rows="5"
+            required
+            ></textarea>
+            {{ end }}
+
+            <div data-netlify-recaptcha="true"></div>
+
+            {{with .button_name}}
+            
+            <button class="button appointment-button">{{. | markdownify | emojify}}</button>
+            {{end}}
+        </form>
+    </div>
+</div>
+{{ partial "form-submission-js-appointment.html" .}}
+{{end}}
+{{end}}

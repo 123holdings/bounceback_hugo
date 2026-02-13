@@ -9,28 +9,33 @@
             <div class="home-map__address-card">
                 <h3 class="home-map__address-heading">{{.heading | markdownify}}</h3>
                 <address class="home-map__address home-map__address--long">{{.address | markdownify}}</address>
-                {{with .telephone}}
-                <div class="home-map__telephone">tel: 
-                    {{$lastIndex:= sub (len .) 1}}
-                    {{range $index,$item:= .}}
-                    <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
-                    {{if ne $index $lastIndex }}
-                    <span></span>
+                    {{with .telephone}}
+                    <div class="home-map__telephone">phone: 
+                        {{$lastIndex:= sub (len .) 1}}
+                        {{range $index,$item:= .}}
+                        <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
+                        {{if ne $index $lastIndex }}
+                        <span></span>
+                        {{end}}
+                        {{end}}
+                    </div>
                     {{end}}
+                    {{with .email}}
+                    <div class="home-map__telephone">Email: 
+                        {{$lastIndex:= sub (len .) 1}}
+                        {{range $index,$item:= .}}
+                        <a href="mailto:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
+                        {{if ne $index $lastIndex }}
+                        <span></span>
+                        {{end}}
+                        {{end}}
+                    </div>
                     {{end}}
-                </div>
-                {{end}}
-                {{with .mobile}}
-                <div class="home-map__telephone">mob: 
-                    {{$lastIndex:= sub (len .) 1}}
-                    {{range $index,$item:= .}}
-                    <a href="tel:{{.}}" class="home-map__tel"> {{$item | markdownify}}</a>
-                    {{if ne $index $lastIndex }}
-                    <span></span>
+                    {{with .hours}}
+                    <div class="home-map__telephone home-map__hours">Opening Hours: 
+                        <p class="home-map__tel"> {{. | markdownify}}</p>
+                    </div>
                     {{end}}
-                    {{end}}
-                </div>
-                {{end}}
             </div>
             {{end}}
         </div>

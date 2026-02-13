@@ -30,7 +30,7 @@ content_blocks:
       text: >-
         BounceBack Data Recovery makes the shipping process as easy as possible with simple shipping options.
       button: More Info
-      button_url: /clinics
+      button_url: /data-recovery-services/four-step-process-system/free-shipping/
     light_green_light:
       image: /images/Specialized Services.png
       image_description: Free Evaluation
@@ -38,7 +38,7 @@ content_blocks:
       text: >-
         We will determine the damage, evaluate the medium and consider the type of storage media we will transfer to.
       button: More Info
-      button_url: /services
+      button_url: /data-recovery-services/four-step-process-system/free-evaluation/
     dark_green_light_card:
       image: /images/Online Medicine.png
       image_description: Data is Recovered
@@ -46,7 +46,7 @@ content_blocks:
       text: >-
         Once you approve the quote you are notified at each step of the process while we utilize industry prescribed and proprietary methods to recover your data.
       button: More Info
-      button_url: /doctors
+      button_url: /data-recovery-services/four-step-process-system/your-data-is-recovered/
     dark_green_dark:
       image: /images/New Services.png
       image_description: Data is Delivered
@@ -54,7 +54,7 @@ content_blocks:
       text: >-
         When your data recovery is complete we will let you know the extent of recovery. The recovered data can then be shipped or picked up at one of our offices.
       button: More Info
-      button_url: /new-services
+      button_url: /data-recovery-services/four-step-process-system/your-data-is-delivered/
   - _bookshop_name: home-about
     enable: true
     heading: Why Choose Us?
@@ -201,47 +201,34 @@ content_blocks:
     button_url: /doctors
   - _bookshop_name: google-map
     text: Hello World!
-    enable: false
+    enable: true
     locations:
-      - heading: Sheikh Zayed
+      - heading: BounceBack Data Recovery, Inc.
         address: >-
-          Karma 1 Office Building, Above Al Ahli Bank of Kuwait, 2nd Floor,
-          Sheikh Zayed, Giza Governorate
+          6 cardinal way
+          Saint Louis, MO 63102
         mapURL: >-
-          https://www.google.com/maps/place/Oasis+Clinics/@30.0207117,31.4319216,17z/data=!3m1!4b1!4m5!3m4!1s0x14583cd821bc73f7:0x13028c3e4c2c293d!8m2!3d30.0207117!4d31.4341156?shorturl=1
+          https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.0596450913367!2d-90.19329189999999!3d38.624508899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b515c7400ef9%3A0x1d3a9ec378be2943!2sBounceBack%20Data%20Recovery%2C%20Inc.!5e0!3m2!1sen!2sbd!4v1770954946549!5m2!1sen!2sbd
         co_oridinate:
-          lat: 30.02393421280631
-          lng: 30.998704758402358
+          lat: 38.6245089
+          lng: -90.1932919
         telephone:
-          - +202 3794 2522
-          - +202 3794 2523
-          - +202 3794 2013
-        mobile:
-          - +20 100 4000 777
-          - +20 100 4000 778
-      - heading: East Cairo
-        address: |-
-          District 5 | Marakez | Gate 3
+          - 1-314-690-3009
+        email:
+          - info@bouncebackdata.com
+        hours: 24/7
 
-          Mindhaus, Bldg BOI - G13
+      - heading: BounceBack Data Recovery
+        address: |-
+          2646 Highway 109
+          Wildwood, MO 63040
         mapURL: >-
-          https://www.google.com/maps/place/29%C2%B057'10.1%22N+31%C2%B026'58.4%22E/@29.9528056,31.4495556,17z/data=!4m4!3m3!8m2!3d29.9528056!4d31.4495556?hl=en&entry=ttu
+          https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.250412672047!2d-90.644156!3d38.5740809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d92bdc86eabd8f%3A0x5ebac26b269e3588!2sBounceBack%20Data%20Recovery!5e0!3m2!1sen!2sbd!4v1770955089167!5m2!1sen!2sb
         co_oridinate:
-          lat: 29.952806
-          lng: 31.449556
-        telephone: []
-        mobile:
-          - +20 100 2665 999
-          - +20 100 2665 777
-      - heading: North Coast
-        address: Diplo, Sidi Abdel Rahman
-        mapURL: >-
-          https://www.google.com/maps/place/Oasis+Clinics/@30.95582,28.7708363,17z/data=!3m1!4b1!4m5!3m4!1s0x145ffb9ad7444b83:0x78b66f7eaa8fcdb2!8m2!3d30.95582!4d28.773025?hl=en-EG
-        co_oridinate:
-          lat: 30.95581940652088
-          lng: 28.77302499769619
-        telephone: []
-        mobile:
-          - +20 100 4000 776
-          - +20 101 6628 966
+          lat: 38.5740809
+          lng: -90.644156
+        telephone:
+          - 1-636-333-0030
+        email: []
+        hours: 8am – 10pm
 ---
