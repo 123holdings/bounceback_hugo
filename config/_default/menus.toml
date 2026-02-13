@@ -40,11 +40,11 @@ weight = 25
 # top menus
 [[topmenu]]
 name = "careers"
-url = "company/careers/"
+url = "/why-choose-us/company/careers/"
 weight = 1
 [[topmenu]]
 name = "Our Credentials"
-url = "company/our-credentials/"
+url = "/why-choose-us/company/our-credentials/"
 weight = 2
 [[topmenu]]
 name = "Blog"

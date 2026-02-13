@@ -1,0 +1,57 @@
+{{define "main"}}
+<div class="container doctors-title js--services-title clinics-title clinics-title--active">
+    {{$mainPage:= .GetPage "company/"}}
+    <a href="/data-security/">{{$mainPage.Title}}</a>
+</div>
+<section class="clinics-main">
+    <div class="container">
+        <div class="side-bar-manu">
+            <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 9H22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 17H22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </div>
+        <aside id="sidebar" class="clinics-sidebar">
+            {{$title:= .Title}}
+            {{ range $index,$service:= where site.RegularPages "Section" "company"}}
+            <div class="clinics-sidebar__item{{if eq $title .Title }} clinics-sidebar__item--active{{end}}">
+                <a href="{{.Permalink}}" >{{.Title | markdownify}}</a>
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0.5L6.5 6.5L0.5 12.5" stroke="#011A0E"/>
+                </svg>
+                
+            </div>
+            {{end}}
+        </aside>
+        <main id="clinics-details" class="clinics-details">
+            <div class="services-hero">
+                <div class="services-hero__content">
+                    <h1 class="services-hero__title">{{.Title | markdownify}}</h1>
+                    {{if .Params.booking_button.enable}}
+                    <div>
+                        <a  href="{{.Params.booking_button.url}}" class="button" >{{.Params.booking_button.label}}</a>
+                    </div>
+                    {{end}}
+                </div>
+                <div class="services-hero__bg-layer"></div>
+                <div class="services-hero__image">
+                    {{with .Params.title_image}}
+                    {{- if fileExists (add `assets/` (printf "%s" .)) -}}
+                    {{- $img:= resources.Get  (printf "%s" .) -}}
+                    {{- $img_destop:= $img.Fill "webp 1500x750" -}}
+                    {{- $img_mobile:= $img.Fill "webp 600x330" -}}
+                    <picture>
+                        <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
+                        <source media="(min-width: 576px)" srcset="{{$img_destop.Permalink}}">
+                        <img decoding="async" src="{{$img_destop.Permalink}}" alt="{{$.Title}}">
+                    </picture>
+                {{- end -}}
+                {{- end -}}
+                </div>
+            </div>
+            {{.Content}}
+        </main>
+    </div>
+</section>
+{{end}}
