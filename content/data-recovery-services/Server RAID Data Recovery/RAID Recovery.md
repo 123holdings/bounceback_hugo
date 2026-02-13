@@ -6,6 +6,7 @@ description: >-
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 1
+title_image: images/RAID data recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

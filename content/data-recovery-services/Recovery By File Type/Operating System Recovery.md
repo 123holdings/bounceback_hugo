@@ -5,7 +5,8 @@ description: >-
   Explore a full range of healthcare services at Oasis Clinics, including
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
-
+weight: 3
+title_image: images/os-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

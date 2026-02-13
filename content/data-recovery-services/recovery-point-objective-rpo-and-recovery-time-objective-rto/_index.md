@@ -5,7 +5,8 @@ description: >-
   Explore a full range of healthcare services at Oasis Clinics, including
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
-
+weight: 7
+title_image: images/time-is-passing-blue-hourglass-close-up.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

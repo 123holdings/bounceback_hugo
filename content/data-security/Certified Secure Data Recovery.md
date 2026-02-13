@@ -2,7 +2,8 @@
 title: "Certified Secure Data Recovery"
 description: "This is meta description"
 
-title_image: "images/vaccines.jpg"
+weight: 1
+title_image: images/certified-secured-data-recovery.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

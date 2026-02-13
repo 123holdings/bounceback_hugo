@@ -2,7 +2,7 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/bouncebackrecovery-logo-transparent.png"
+logo = "images/bounceback-logo.png"
 # use `x` with logo_width, example: "100x"
 logo_width = ""
 # logo text will only show when logo is missing.
@@ -77,54 +77,37 @@ button_link = "/"
 [[contact]]
 title = "facebook"
 icon = "images/facebook-green.svg"
-link = "https://www.facebook.com/oasisclinics"
+link = "https://www.facebook.com/pages/BounceBack-Data-Recovery-Inc/209793635724253?sk=wall"
 
 [[contact]]
 title = "linkedin"
 icon = "images/linkedin-green.svg"
-link = "https://www.linkedin.com/company/oasis-clinics/"
+link = ""
 
 [[contact]]
 title = "twitter"
 icon = "images/twitter-green.svg"
-link = "https://twitter.com/oasisclinics"
+link = "https://x.com/BounceBack1"
 
 [[contact]]
 title = "youtube"
 icon = "images/youtube-green.svg"
-link = "https://www.youtube.com/channel/UCDKbcwNDxuEqJ3PinMGP75w"
+link = ""
 
-[[contact]]
-title = "instagram"
-icon = "images/instagram-green.svg" # https://icons8.com/line-awesome
-link = "https://www.instagram.com/oasis_clinics/"
+
 
 
 ############################# social site ########################
 [[social]]
 title = "facebook"
 icon = "images/facebook.svg"
-link = "https://www.facebook.com/oasisclinics"
-
-[[social]]
-title = "linkedin"
-icon = "images/linkedin.svg"
-link = "https://www.linkedin.com/company/oasis-clinics/"
+link = "https://www.facebook.com/pages/BounceBack-Data-Recovery-Inc/209793635724253?sk=wall"
 
 [[social]]
 title = "twitter"
 icon = "images/twitter.svg"
-link = "https://twitter.com/oasisclinics"
+link = "https://x.com/BounceBack1"
 
-[[social]]
-title = "youtube"
-icon = "images/youtube.svg"
-link = "https://www.youtube.com/channel/UCDKbcwNDxuEqJ3PinMGP75w"
-
-[[social]]
-title = "instagram"
-icon = "images/instagram.svg" # https://icons8.com/line-awesome
-link = "https://www.instagram.com/oasis_clinics/"
 
 
 # footer info

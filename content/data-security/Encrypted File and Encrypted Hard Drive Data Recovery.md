@@ -1,8 +1,8 @@
 ---
 title: "Encrypted File and Encrypted Hard Drive Data Recovery"
 description: "This is meta description"
-
-title_image: "images/vaccines.jpg"
+weight: 3
+title_image: "images/encrypted-data-security-recovery.webp"
 booking_button:
   enable: true
   label: Start My Recovery Now

@@ -6,6 +6,7 @@ description: >-
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 3
+title_image: images/your data is recovered.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

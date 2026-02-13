@@ -6,6 +6,7 @@ description: >-
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 2
+title_image: images/shipping.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

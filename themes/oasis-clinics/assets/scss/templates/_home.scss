@@ -687,7 +687,7 @@
     padding: 50px 20px;
     border-bottom: 1px solid #33a977;
     @include tablet {
-      grid-column: span 6;
+      grid-column: span 12;
       padding: 62px 42px;
       border: 1px solid #33a977;
     }
@@ -696,13 +696,13 @@
       border-bottom: none;
     }
 
-    &:first-child{
-        @include tablet {
-          grid-column: span 12;
-          border-bottom: none;
-          border-left: none;
-      }
-    }
+    // &:first-child{
+    //     @include tablet {
+    //       grid-column: span 12;
+    //       border-bottom: none;
+    //       border-left: none;
+    //   }
+    // }
   }
 
   &__address-heading {

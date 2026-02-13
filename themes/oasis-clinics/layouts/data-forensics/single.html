@@ -1,6 +1,6 @@
 {{define "main"}}
 <div class="container doctors-title js--services-title clinics-title">
-    {{$root := site.GetPage "section" "data-recovery-services"}}
+    {{$root := site.GetPage "section" "data-forensics"}}
     <a href="/data-recovery-services/">{{$root.Title}}</a>
 </div>
 <section class="clinics-main">
@@ -14,7 +14,7 @@
         </div>
         <aside id="sidebar" class="clinics-sidebar">
             {{$title:= .Title}}
-            {{$root := site.GetPage "section" "data-recovery-services"}}
+            {{$root := site.GetPage "section" "data-forensics"}}
             {{ partial "sidebar-tree.html" (dict "pages" $root.Pages "current" .) }}
         </aside>
         <main id="clinics-details" class="clinics-details">

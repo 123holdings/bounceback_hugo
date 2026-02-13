@@ -1,11 +1,11 @@
 ---
 title: SAN/NAS Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
   Explore a full range of healthcare services at Oasis Clinics, including
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 2
+title_image: images/sannas-recovery.webp
 booking_button:
   enable: true
   label: Start My Recovery Now
