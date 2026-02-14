@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/images/home-hero-bg.jpg");
+  background-image: url("/images/home-hero-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -304,7 +304,6 @@
 
   &__card {
     margin-top: 45px;
-    margin-bottom: 45px;
     @include tablet {
       flex-shrink: inherit;
       display: grid;
@@ -799,7 +798,6 @@
 
 .hero {
     position: relative;
-    background-image: url(/images/home-hero-bg-1.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -826,4 +824,87 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.review-card {
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-meta {
+  flex: 1;
+}
+
+.review-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-rating {
+  font-size: 14px;
+  color: #fbbc04; /* Google yellow */
+}
+
+.review-time {
+  color: #777;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.review-menu {
+  font-size: 20px;
+  color: #777;
+  cursor: pointer;
+}
+
+.review-text {
+  font-size: 18px;
+  color: #333;
+  margin: 16px 0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+
+.review-actions span {
+  cursor: pointer;
+}
+
+.review-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.review-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #056839; /* Your brand green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.review-button:hover {
+  background: #044f2c;
 }

@@ -60,31 +60,31 @@ weight = 3
   weight = 2
 [[services]]
   name = "Company"
-  url = "company"
+  url = "/why-choose-us/company//"
   weight = 3
 [[services]]
   name = "Resource Library"
-  url = "#"
+  url = "/support/resource-library/"
   weight = 4
 [[services]]
   name = "Locations"
-  url = "#"
-  weight = 4
+  url = "/contact-us/#locations"
+  weight = 5
 
 #important links
 [[important_links]]
   name = "Data Recovery Home"
-  url = "#"
+  url = "/data-recovery-services/"
   weight = 1
 [[important_links]]
   name = "eDiscovery Services"
-  url = "#"
+  url = "/data-forensics/ediscovery-services/"
   weight = 2
 [[important_links]]
   name = "ESI Forensics"
-  url = "#"
+  url = "/data-forensics/esi-forensics/"
   weight = 3
 [[important_links]]
   name = "Data Security"
-  url = "#"
+  url = "/data-security/"
   weight = 4

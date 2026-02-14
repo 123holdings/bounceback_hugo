@@ -9,6 +9,7 @@
                         <div class="colorful-boxes__header">
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
+                                {{$img}}
                                 {{- $img_destop:= $img.Resize "webp 40x" -}}
                                 <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
                             {{- end -}}

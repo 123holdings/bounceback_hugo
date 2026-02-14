@@ -1,10 +1,7 @@
 ---
-title: Oasis Clinics
-meta_title: Oasis Clinics | Leading Healthcare & Specialized Medical Care
+title: BounceBack Data Recovery
 description: >-
-  Experience expert healthcare at Oasis Clinics, offering specialized medical
-  care with cutting-edge technologies and top doctors in Cairo, Sheikh Zayed,
-  and more.
+  BounceBack Data Recovery delivers secure, professional data recovery services for hard drives, servers, medical records, and mobile devices, ensuring privacy, reliability, and peace of mind.
 content_blocks:
   - _bookshop_name: home-hero
     enable: true
@@ -24,37 +21,37 @@ content_blocks:
   - _bookshop_name: colorful-boxes
     enable: true
     light_green_dark_card:
-      image: /images/Our Clinics.png
+      image: images/hard-drive-recovery-icon.jpeg
       image_description: Ship Your Media
-      heading: Ship Your Media
+      heading: Hard Drive Data Recovery
       text: >-
-        BounceBack Data Recovery makes the shipping process as easy as possible with simple shipping options.
+        BounceBack Data Recovery provides expert, nondestructive hard drive recovery with advanced tools and 15 years’ experience, offering free estimates, no-recovery-no-fee guarantee, cleanroom repairs, and secure data transfer.
       button: More Info
-      button_url: /data-recovery-services/four-step-process-system/free-shipping/
+      button_url: /data-recovery-services/hard-drive-data-recovery/
     light_green_light:
-      image: /images/Specialized Services.png
-      image_description: Free Evaluation
-      heading: Free Evaluation
+      image: images/Specialized Services.png
+      image_description: Server & RAID Data Recovery
+      heading: Server Data Recovery
       text: >-
-        We will determine the damage, evaluate the medium and consider the type of storage media we will transfer to.
+        BounceBack Data Recovery specializes in server recovery, including RAID, SAN/NAS, and Apple XServe systems. With expert technicians, proprietary tools, and remote support, they minimize downtime and restore critical business data efficiently.
       button: More Info
-      button_url: /data-recovery-services/four-step-process-system/free-evaluation/
+      button_url: /data-recovery-services/server-raid-data-recovery/
     dark_green_light_card:
-      image: /images/Online Medicine.png
-      image_description: Data is Recovered
-      heading: Data is Recovered
+      image: images/Online Medicine.png
+      image_description: Medical Data Recovery
+      heading: Medical Data Recovery
       text: >-
-        Once you approve the quote you are notified at each step of the process while we utilize industry prescribed and proprietary methods to recover your data.
+        BounceBack Data Recovery provides secure, HIPAA-compliant medical data recovery for patient, billing, and imaging records, with strict security protocols, encrypted recovery, business associate agreements, and guaranteed data restoration.
       button: More Info
-      button_url: /data-recovery-services/four-step-process-system/your-data-is-recovered/
+      button_url: /data-recovery-services/medical-data-recovery/
     dark_green_dark:
-      image: /images/New Services.png
-      image_description: Data is Delivered
-      heading: Data is Delivered
+      image: images/New Services.png
+      image_description: Cell Phone Data Recovery
+      heading: Cell Phone Data Recovery
       text: >-
-        When your data recovery is complete we will let you know the extent of recovery. The recovered data can then be shipped or picked up at one of our offices.
+        BounceBack Data Recovery restores lost cell phone data—including texts, photos, and call logs—across devices and memory cards, offering free evaluations, customized recovery methods, secure handling, and pricing typically between $700–$1200.
       button: More Info
-      button_url: /data-recovery-services/four-step-process-system/your-data-is-delivered/
+      button_url: /data-recovery-services/cell-phone-data-recovery/
   - _bookshop_name: home-about
     enable: true
     heading: Why Choose Us?
@@ -78,23 +75,33 @@ content_blocks:
   - _bookshop_name: home-services
     enable: true
     heading: What clients say about us
-    image: /images/google review.jpeg
+    image: /images/google review.webp
     slider:
       - cards:
-          - image: images/google-review-susanTaylor.png
+          - image: /images/susan.png
             image_description: "google-review-susanTaylor"
-            url: https://maps.app.goo.gl/cNsqnFU5ZSWvVEuX7
+            name: Susan Taylor-Alonsos
+            text: >-
+              Not only was Mike able to recover my data, but he was able to repair my MacBook Pro. The hard drive went bad due to planned obsolescence. Apple wanted me to either replace the entire board and strip my data. This service was definitely worth the wait!!! Definitely recommend!
             button_label: See on Gooogle Review
+            button_link: https://maps.app.goo.gl/cNsqnFU5ZSWvVEuX7
       - cards:
-          - image: images/google-review-carrie-west.png
-            image_description: "google-review-susanTaylor"
-            url: https://maps.app.goo.gl/4qvAGP7UwF1ZK8Zq6
+          - image: /images/carrie-west.png
+            image_description: "carrie-west"
+            name: Carrie West
+            text: >-
+              Incredibly fast service! Mike was very helpful and communicative. I could have shopped around for a lower price, but I wanted to make sure my data could be recovered and that the device wouldn't be destroyed in the process. Everything was recovered with no damage to the device, and I'm truly grateful.
             button_label: See on Gooogle Review
+            button_link: https://maps.app.goo.gl/Gx8FubN2S1nMKfmx6
       - cards:
-          - image: images/google-review-scott-thomas.png
-            image_description: "google-review-susanTaylor"
-            url: https://maps.app.goo.gl/59xCKZCfWRtp8GcR6
+          - image: /images/Moom Moomoo.png
+            image_description: "Moom Moomo"
+            name: Moom Moomo
+            text: >-
+              This is the best place for data recovery. Its extremely affordable, too, which is a huge plus. That's one thing that scares people off when they're hard drive is shot, the cost... Not with BounceBack. Easily 5 stars.
             button_label: See on Gooogle Review
+            button_link: https://maps.app.goo.gl/RynefsZ32xCYeMBaA
+
   - _bookshop_name: home-clinics
     enable: false
     heading: Our Clinics

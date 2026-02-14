@@ -142,16 +142,16 @@
   </div>
       <div class="container footer-bottom__container">
         <div class="footer-bottom__left">
-          &copy; {{ now.Format "2006" }} {{ site.Params.copyright_text }}
+          &copy; {{ now.Format "2006" }} BounceBack Data Recovery
         </div>
         <div class="footer-bottom__right">
           {{with site.Params.privacy_button}}
-          <a href="{{ .link | relLangURL }}" class="footer-bottom__link">{{.label | markdownify}}</a>
+          <a href="{{ .link }}" class="footer-bottom__link">{{.label | markdownify}}</a>
           {{end}}
-          <span class="footer-bottom__separator">|</span>
-          {{with site.Params.cookies_setting}}
+          <!-- <span class="footer-bottom__separator">|</span> -->
+          <!-- {{with site.Params.cookies_setting}}
           <button onclick="openSettings()" class="footer-bottom__link cookie_setting_btn">{{.label | markdownify}}</button>
-          {{end}}
+          {{end}} -->
         </div>
       </div>
 

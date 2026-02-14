@@ -211,21 +211,23 @@
   height: fit-content;
   max-height: 0;
   overflow-y: auto;
-  scrollbar-color: $green $green;
+  scrollbar-color: $green #e6f0eb;
   scrollbar-width: thin !important;
   transition: max-height 0.3s ease-in;
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
   }
   &::-webkit-scrollbar-track {
-    background: $green;
+    background: #e6f0eb;
   }
 
   &::-webkit-scrollbar-thumb {
     background: $green;
+    border-radius: 4px;
   }
+
   &::-webkit-scrollbar-thumb:hover {
-    background: $green;
+    background: darken($green, 10%);
   }
 
   @include tablet {
@@ -250,6 +252,9 @@
     @include tablet {
       padding: 21px 31px;
     }
+    svg{
+      rotate: 90deg;
+    }
     a{
       color: inherit;
       font-size: inherit;
@@ -260,14 +265,22 @@
     }
     &--active {
       color: $green;
-      @include tablet {
-        border-right: 4px solid #056839;
-      }
     }
     svg{
       flex-shrink: 0;
       flex-basis: 8px;
     }
+  }
+  &__children{
+    margin-left: 12px;
+    .clinics-sidebar__item a::before {
+    content: "\25CF";
+    color: #7fbc03;
+    font-weight: 700;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1em;
+}
   }
 }
 

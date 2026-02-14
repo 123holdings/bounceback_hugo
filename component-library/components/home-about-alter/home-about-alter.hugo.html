@@ -9,7 +9,7 @@
                     {{- $img_mobile:= $img.Resize "webp 335x" -}}
                     <picture>
                         <source media="(max-width: 575px)" srcset="{{$img_mobile.Permalink}}">
-                        <img class="home-about__image" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
+                        <img loading="lazy" class="home-about__image" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
                     </picture>
                 {{- end -}}
             </div>

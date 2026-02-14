@@ -3,6 +3,7 @@
     @media all and (min-width: 767px) {
         .home-services::before{
             background-image: url('{{.image}}');
+            background-color: rgb(71, 106, 94);
         }  
     } 
 </style>
@@ -17,7 +18,7 @@
                     <div class="home-services__card swiper-slide">
                         {{ $items:= .cards }}
                         {{ range $items }}
-                        <div class="home-services__card-item">
+                        <!-- <div class="home-services__card-item">
                             <div class="home-services__card-image-wrap">
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
@@ -28,9 +29,28 @@
                             <div class="button-wrapper">
                                 <a class="button button-desktop" href="{{.url }}">{{.button_label | markdownify}}</a>
                             </div>
+                        </div> -->
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img loading="lazy" src="{{.image}}" alt="{{.image_description}}" class="review-avatar">
+                                <div class="review-meta">
+                                <h4 class="review-name">{{.name | markdownify}}</h4>
+                                <div class="review-rating">
+                                    ★★★★★ 
+                                </div>
+                                </div>
+                            </div>
+
+                            <p class="review-text">
+                                {{.text | markdownify}}
+                            </p>
+
+                            <div class="review-footer">
+                                <a href="{{.button_link}}" class="button button-desktop">{{.button_label}}</a>
+                            </div>
                         </div>
 
-                        
                         {{ end }}
                     </div>
                     {{ end }}

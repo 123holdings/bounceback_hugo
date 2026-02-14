@@ -6,14 +6,14 @@ logo = "images/bounceback-logo.png"
 # use `x` with logo_width, example: "100x"
 logo_width = ""
 # logo text will only show when logo is missing.
-logo_text = "Oasis Clinics"
+logo_text = "BounceBack Data Recovery"
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
-author = "Oasis clinics"
+description = "BounceBack Data Recovery delivers secure, professional data recovery services for hard drives, servers, medical records, and mobile devices, ensuring privacy, reliability, and peace of mind."
+author = "BounceBack Data Recovery"
 image = "/images/oasis-clinics-logo.png" # this image will be used as fallback if a page has no image of its own
 
 # footer information
-footer_info = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
+footer_info = "BounceBack Data Recovery provides trusted, secure data recovery for hard drives, servers, medical records, and phones, ensuring fast, reliable service and complete data protection."
 
 # contact form action
 contact_form_action = "https://formspree.io/f/xgernlzd" # contact form works with https://formspree.io
@@ -65,14 +65,6 @@ expire_days = 2
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
-# call-to-action
-[cta]
-enable = true
-title = "Helping teams in the world with focus"
-content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
-button = "Download The Theme"
-button_link = "/"
-
 ############################# contact page social site ########################
 [[contact]]
 title = "facebook"
@@ -110,11 +102,7 @@ link = "https://x.com/BounceBack1"
 
 
 
-# footer info
 
-footer_info = "Oasis Clinics, Egypt’s leader in patient experience, provides better care of the sick, investigates their problems, and furthers education of those whose sickness can be prevented."
-
-copyright_text = "Oasis Clinics"
 cookie_banner_text ="We use cookies to improve your experience and analyze site traffic. You can Accept All or Customize Preferences to control them. Learn more in our [Privacy & Cookies Policy](/privacy-cookies-policy/)"
 
 [privacy_button]
