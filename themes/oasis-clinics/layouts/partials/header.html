@@ -158,7 +158,7 @@
       <!-- right part of main header -->
       {{with site.Params.primary_button}}
         {{if .enable}}
-        <a href="{{ .link | absLangURL}}" class="button button-mobile">{{ i18n .label}}</a>
+        <a href="{{ .link | absLangURL}}" class="button button-mobile">{{ .label }}</a>
         {{end}}
       {{end}}
       <div class="header__info-wrapper">

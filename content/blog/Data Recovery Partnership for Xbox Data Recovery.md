@@ -8,7 +8,7 @@ description: >-
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z
-title_image: /images/new-project-4-3.jpg
+title_image: images/xbox-data-recovery-partner.jpeg
 excerpt: >-
   Eaton Works has announced today it’s partnership with BounceBack Data Recovery:
 

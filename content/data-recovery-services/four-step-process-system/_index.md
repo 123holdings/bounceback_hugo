@@ -1,11 +1,11 @@
 ---
 title: Four Step Process System
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
   Explore a full range of healthcare services at Oasis Clinics, including
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 1
+draft: true
 title_image: images/four-step-process.jpg
 booking_button:
   enable: true
