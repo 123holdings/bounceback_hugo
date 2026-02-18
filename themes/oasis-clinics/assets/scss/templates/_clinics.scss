@@ -252,9 +252,6 @@
     @include tablet {
       padding: 21px 31px;
     }
-    svg{
-      rotate: 90deg;
-    }
     a{
       color: inherit;
       font-size: inherit;
@@ -350,4 +347,36 @@
 #sidebar.fixed {
   position: fixed;
   top: 140px;
+}
+
+.clinics-sidebar__children {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.clinics-sidebar__children.is-open {
+  max-height: 1000px;
+}
+
+.clinics-sidebar__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clinics-sidebar__toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.clinics-sidebar__item-icon {
+  transition: transform 0.3s ease;
+}
+
+.clinics-sidebar__item-icon.is-rotated {
+  transform: rotate(90deg);
 }

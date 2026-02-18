@@ -2,7 +2,7 @@
 title: "Encrypted File and Encrypted Hard Drive Data Recovery"
 description: "This is meta description"
 weight: 3
-title_image: "images/encrypted-data-security-recovery.webp"
+title_image: "images/encrypted-data-security-recovery.jpg"
 booking_button:
   enable: true
   label: Start My Recovery Now

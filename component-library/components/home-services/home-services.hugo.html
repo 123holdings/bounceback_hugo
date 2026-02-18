@@ -2,12 +2,12 @@
 <style>
     @media all and (min-width: 767px) {
         .home-services::before{
-            background-image: url('{{.image}}');
-            background-color: rgb(71, 106, 94);
+            /* background-image: url('{{.image}}'); */
+            /* background-color: rgb(71, 106, 94); */
         }  
     } 
 </style>
-<section class="home-services">
+<section class="home-services">{{$image:= .image}}
     <div class="container">
         <h2 class="home-services__heading">{{.heading | markdownify}}</h2>
         <div class="home-services__content">
@@ -53,9 +53,13 @@
 
                         {{ end }}
                     </div>
+
                     {{ end }}
                 </div>
             </div>
+             <div>
+                        <img src="{{$image}}" alt="">
+                    </div>
         </div>
         <div class="home-services__pagination">
             <div class="swiper-pagination1"></div>

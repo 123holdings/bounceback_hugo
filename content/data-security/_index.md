@@ -1,10 +1,6 @@
 ---
 title: Data Security
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
-description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+description:
 title_image: images/data-security.jpg
 booking_button:
   enable: true

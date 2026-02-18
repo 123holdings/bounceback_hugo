@@ -5,17 +5,24 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{- $children := union .Sections .Pages -}}
     {{- if $children -}}
-    <svg class="clinics-sidebar__item-icon" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0.5 0.5L6.5 6.5L0.5 12.5" stroke="#011A0E"/>
-    </svg>
+    <button type="button" class="clinics-sidebar__toggle">
+      <svg class="clinics-sidebar__item-icon is-rotated" width="8" height="13" viewBox="0 0 8 13">
+        <path d="M0.5 0.5L6.5 6.5L0.5 12.5" stroke="#011A0E"/>
+      </svg>
+    </button>
     {{- end -}}
   </div>
 
   {{- $children := union .Sections .Pages -}}
   {{- if $children -}}
-    <div class="clinics-sidebar__children">
+    <div class="clinics-sidebar__children is-open">
       {{ partial "sidebar-tree.html" (dict "pages" $children "current" $current) }}
     </div>
   {{- end -}}
 
 {{- end -}}
+
+
+
+
+

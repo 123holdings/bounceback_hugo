@@ -1,0 +1,30 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const sidebar = document.querySelector(".clinics-sidebar");
+  if (!sidebar) return;
+
+  sidebar.addEventListener("click", function (e) {
+
+    // If clicking on link → do nothing (allow navigation)
+    if (e.target.closest("a")) return;
+
+    const item = e.target.closest(".clinics-sidebar__item");
+    if (!item) return;
+
+    const children = item.nextElementSibling;
+    if (!children || !children.classList.contains("clinics-sidebar__children")) return;
+
+    // Toggle open
+    children.classList.toggle("is-open");
+
+    // Rotate icon if exists
+    const icon = item.querySelector(".clinics-sidebar__item-icon");
+    if (icon) {
+      icon.classList.toggle("is-rotated");
+    }
+
+  });
+
+});
+</script>
