@@ -254,39 +254,35 @@
     padding: 45px 0 100px;
   }
 
-  &::before {
-    content: "";
-    display: none;
-    @include tablet {
-      display: block;
-      position: absolute;
-      right: 0;
-      width: 50%;
-      top: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      // background-image: url(/images/home_services-green.webp);
-      z-index: 10;
-    }
-  }
 
   &__heading {
     font-size: $h3-md;
     color: $primary-text;
     font-weight: 600;
     margin: 0;
+    text-align: center;
     @include tablet {
+      font-size: 32px;
+    }
+    @include desktop-lg {
+      text-align: left;
       font-size: 32px;
     }
   }
 
   &__content {
     overflow: hidden;
-    @include tablet {
+    @include desktop-lg {
       display: flex;
       justify-content: space-between;
+    }
+    .swiper-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include desktop-lg {
+        display: initial;
+      }
     }
   }
 
@@ -325,10 +321,12 @@
     display: table;
     margin: auto;
     margin-top: 15px;
-    @include tablet {
+    display: none;
+    @include desktop-lg {
       display: block;
       margin: inherit;
       margin-top: 15px;
+      width: 50%;
     }
   }
   &__card-image{
@@ -366,11 +364,12 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%) rotateZ(360deg);
-    @include tablet {
+    @include desktop-lg {
       left: 28%;
       transform: translateX(-28%) rotateZ(360deg);
       padding-top: 51px;
     }
+
     .swiper-pagination-bullet {
       width: 10px !important;
       height: 10px !important;
@@ -409,8 +408,10 @@
 }
 
 .swiper1 {
-  @include tablet {
+  width: 100%;
+  @include desktop-lg {
     width: 50%;
+    overflow: hidden;
   }
 }
 .home-map__address p{
