@@ -1,26 +1,29 @@
 ---
 title: Cell Phone Data Recovery
 description: >-
-  BounceBack Data Recovery has the expertise and dedicated equipment to recover lost or corrupted data from most cell phones on the market today. We service all manufacturers, programming languages and operating systems. Perhaps nothing in the field of data storage is as varied and changing as cell phone technology.
+  BounceBack Data Recovery has the expertise and dedicated equipment to recover
+  lost or corrupted data from most cell phones on the market today. We service
+  all manufacturers, programming languages and operating systems. Perhaps
+  nothing in the field of data storage is as varied and changing as cell phone
+  technology.
 weight: 5
 title_image: /images/cell-phone-data-recovery-2.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now
-  url: "/start-my-recovery/"
+  url: /start-my-recovery/
 ---
-
-## Description:
+## Descriptions:
 
 BounceBack Data Recovery has the expertise and dedicated equipment to recover lost or corrupted data from most cell phones on the market today. We service all manufacturers, programming languages and operating systems. Perhaps nothing in the field of data storage is as varied and changing as cell phone technology. BounceBack has years of experience servicing these devices and our technicians undergo ongoing training to stay at the front of the cell phone data recovery industry.
 
 We can recover most any type of data from a damaged or corrupted cell phone such as:
 
-- Deleted text messages
-- Call history
-- Photos and videos
-- Music
-- Other stored files
+* Deleted text messages
+* Call history
+* Photos and videos
+* Music
+* Other stored files
 
 Each cell phone case is unique and must be approached accordingly. What works with a flip phone probably won’t work with a smart phone and vice versa. Apple iOS will require and different approach than an Android OS. While we have developed some standard approaches and proven techniques over the years, we are proud to say that we carefully evaluate and assess each cell phone data recovery case before proceeding. Potentially recoverable data can be lost using cookie-cutter techniques.
 
@@ -28,12 +31,12 @@ Because of their portability, damage or loss of cell phone data is a common occu
 
 For ease of use and expansion capabilities, cell phone users often turn to removable memory storage devices to store their data. When it comes to cell phone data recovery, a company also needs to be able to access all types of memory cards. We can service:
 
-- SD card
-- Mini SD card
-- MMC
-- SM card
-- Memory stick
-- If you are in need of cell phone data recovery, please call or set up a case online today.
+* SD card
+* Mini SD card
+* MMC
+* SM card
+* Memory stick
+* If you are in need of cell phone data recovery, please call or set up a case online today.
 
 ### Pricing
 
