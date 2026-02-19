@@ -9,22 +9,15 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  enable: true
-  heading: Who We Are
-  image: "/images/home-about.png"
-  image_description: ''
-  title: About Oasis Clinics
-  text: Oasis Clinics is a medical group practice specializing in outpatient and inpatient
-    daycare health services. It is a one-of-a-kind polyclinic wholly devoted to outpatient
-    services, GIT, endoscopies and inpatient surgical procedures. Oasis Clinics provides
-    a range of integrated medical services designed to provide holistic treatment
-    for the whole family in a positive and comfortable environment that adheres to
-    the universal infection control standards. With over 30 specialties in one state-of-the-art,
-    easy to reach location, Oasis Clinics is the premier supplier of quality medicine
-    in the Cairo West suburbs of Sheikh Zayed, Sixth of October, the North Coast (Diplo),
-    New Maadi, and New Cairo.
-  button: Read More
-  button_url: "/about"
+    enable: true
+    heading: Why Choose Us?
+    image: /images/home/bounceback-why-choose-us.jpg
+    image_description: "a person is looking at microscope"
+    title: ""
+    text: >-
+      This is a small company, run by one person who has been in the industry since 2000.  Transparent and honest service is, unfortunately, a rare commodity in this industry.  The goal of BounceBack is to trump the competition from the strategic position of this moral high ground, while offering the best work and service possible with every customer.
+    button: Read More
+    button_url: /why-choose-us/
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

@@ -10,21 +10,20 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
 hero:
-  enable: true
-  slide_items:
-  - heading: Sheikh Zayed Branch
-    schedule: Sat to Thu (09:00 am - 10:00 pm)
-    button: Call Now
-    button_url: "+20237942522"
-  - heading: New Cairo Branch
-    schedule: Sat to Thu (09:00 am - 10:00 pm)
-    button: Call Now
-    button_url: "+201225044544 "
-  - heading: North Coast Branch
-    schedule: June, July, August & September Everyday from 10:00 am to 12:00 am
-    button: Call Now
-    button_url: "+201225044544"
-
+    enable: true
+    slide_items:
+      - heading: Data Recovery
+        schedule: Secure, confidential, and reliable data restoration
+        button: Call Now
+        button_url: "3146903009"
+      - heading: Data Security
+        schedule: Keeping your data safe, private, and fully protected
+        button: Call Now
+        button_url: "16363330030"
+      - heading: DIgital Forensics
+        schedule: Certified forensic analysis you can rely on
+        button: Call Now
+        button_url: "3146903009"
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 

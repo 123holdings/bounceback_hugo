@@ -9,22 +9,15 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  enable: true
-  heading: Who We Are
-  image: "/images/home-about.png"
-  image_description: ''
-  title: About Oasis Clinics
-  text: Oasis Clinics is a medical group practice specializing in outpatient and inpatient
-    daycare health services. It is a one-of-a-kind polyclinic wholly devoted to outpatient
-    services, GIT, endoscopies and inpatient surgical procedures. Oasis Clinics provides
-    a range of integrated medical services designed to provide holistic treatment
-    for the whole family in a positive and comfortable environment that adheres to
-    the universal infection control standards. With over 30 specialties in one state-of-the-art,
-    easy to reach location, Oasis Clinics is the premier supplier of quality medicine
-    in the Cairo West suburbs of Sheikh Zayed, Sixth of October, the North Coast (Diplo),
-    New Maadi, and New Cairo.
-  button: Read More
-  button_url: "/about"
+    enable: true
+    heading: BounceBack Data Recovery
+    image: /images/home/bounceback-data-recovery-home.jpg
+    image_description: "motherboard"
+    title:
+    text: >-
+      BounceBack Data Recovery specializes in salvaging lost, damaged, or otherwise compromised data from all different types of electronic media storage devices. We strive to offer competitive pricing, quick turnaround, and professional and friendly customer service. Our price quotes are firm and all-inclusive… you will never be charged more than the agreed upon quote. And if we don’t recover your data, you don’t pay.
+    button: Read More
+    button_url: /data-recovery-services/
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

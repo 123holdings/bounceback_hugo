@@ -11,30 +11,29 @@ spec:
 blueprint:
     enable: true
     light_green_dark_card:
-      heading: Our Clinics
-      text: Outpatient consultations in over 30 specializations, working together as
-        one unit and with patient records
+      heading: Hard Drive Data Recovery
+      text: >-
+        BounceBack Data Recovery provides expert, nondestructive hard drive recovery with advanced tools and 15 years’ experience, offering free estimates, no-recovery-no-fee guarantee, cleanroom repairs, and secure data transfer.
       button: More Info
-      button_url: "/clinics"
+      button_url: /data-recovery-services/hard-drive-data-recovery/
     light_green_light:
-      heading: Specialized Services
-      text: Inpatient complimentary services include surgical center, endoscopy, ultrasound,
-        and more. Servicing clinics and also available standalone to outside consultants
+      heading: Server Data Recovery
+      text: >-
+        BounceBack Data Recovery specializes in server recovery, including RAID, SAN/NAS, and Apple XServe systems. With expert technicians, proprietary tools, and remote support, they minimize downtime and restore critical business data efficiently.
       button: More Info
-      button_url: "/services"
+      button_url: /data-recovery-services/server-raid-data-recovery/
     dark_green_light_card:
-      heading: Online Consultations
-      text: Online consultations are available in most of Oasis’ outpatient specializations,
-        with our top doctors
-      button: Request Now
-      button_url: "/doctors"
+      heading: Medical Data Recovery
+      text: >-
+        BounceBack Data Recovery provides secure, HIPAA-compliant medical data recovery for patient, billing, and imaging records, with strict security protocols, encrypted recovery, business associate agreements, and guaranteed data restoration.
+      button: More Info
+      button_url: /data-recovery-services/medical-data-recovery/
     dark_green_dark:
-      heading: New Services
-      text: Oasis Clinics also arranges for home visits, including checkups and investigations
-        with portable medical devices
-      button: Request Now
-      button_url: "/new-services"
-
+      heading: Cell Phone Data Recovery
+      text: >-
+        BounceBack Data Recovery restores lost cell phone data—including texts, photos, and call logs—across devices and memory cards, offering free evaluations, customized recovery methods, secure handling, and pricing typically between $700–$1200.
+      button: More Info
+      button_url: /data-recovery-services/cell-phone-data-recovery/
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
