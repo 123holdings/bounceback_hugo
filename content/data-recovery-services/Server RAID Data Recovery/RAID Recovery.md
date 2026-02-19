@@ -3,7 +3,7 @@ title: RAID Recovery
 description: >-
   A RAID array can store terabytes of information or serve as a simple back-up for a home PC. As many RAID levels offer built-in redundancy, they are considered to be a safe way to store data. Most businesses with IT departments operate at least one major RAID server.
 weight: 1
-title_image: images/RAID data recovery.jpg
+title_image: /images/RAID data recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

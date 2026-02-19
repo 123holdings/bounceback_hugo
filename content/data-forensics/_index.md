@@ -2,7 +2,7 @@
 title: Digital Forensics
 description: >-
   Often in the course of investigation or litigation it is important for lawyers and law enforcement to access electronic evidence. This electronically stored information (EMI) must be obtained and organized in a fashion that is in compliance with legal standards in order to be properly utilized. Often times, EMI has been intentionally deleted or modified.
-title_image: images/data-forencis.jpg
+title_image: /images/data-forencis.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

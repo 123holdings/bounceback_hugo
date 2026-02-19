@@ -3,7 +3,7 @@ title: Database Recovery
 description: >-
   A database is simply a system intended to organize, store, and retrieve vast amounts of data easily. Anybody who works with databases or has experienced database damage or corruption can imagine how troubling it can be when you can longer access your valuable data.
 weight: 2
-title_image: images/database-recovery.jpg
+title_image: /images/database-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

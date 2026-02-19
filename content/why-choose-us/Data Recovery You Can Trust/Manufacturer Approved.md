@@ -1,11 +1,8 @@
 ---
 title: Manufacturer Approved
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
-weight: 2
-title_image: images/manufacturer-approved.webp
+  BounceBack Data Recovery is approved by all of the following major manufacturers to open your device without voiding the warranty. This means that you can still receive an in-warranty replacement from the manufacturer even if the drive has been opened by BounceBack.
+title_image: /images/manufacturer-approved.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

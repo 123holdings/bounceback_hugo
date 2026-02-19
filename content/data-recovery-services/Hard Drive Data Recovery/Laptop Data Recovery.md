@@ -3,7 +3,7 @@ title: Laptop Data Recovery
 description: >-
   Laptop data recovery has high success rates because many newer laptop HDDs are designed to be resistant to physical damage. Many have a special construction which absorbs shock and some laptops are shock-mounted for additional protection.
 weight: 2
-title_image: images/laptop-data-recovery.jpg
+title_image: /images/laptop-data-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

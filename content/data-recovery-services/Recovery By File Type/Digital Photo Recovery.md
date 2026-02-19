@@ -3,7 +3,7 @@ title: Digital Photo Recovery
 description: >-
   Of all the recovery jobs we see, loss of treasured digital photos is particularly devastating to our customers. At BounceBack we are often able to recovery lost, deleted, or damaged photos, often in a matter of minutes.
 weight: 4
-title_image: images/digital-photo-recovery.jpg
+title_image: /images/digital-photo-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

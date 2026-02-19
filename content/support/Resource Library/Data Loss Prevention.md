@@ -5,7 +5,7 @@ description: >-
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 3
-title_image: images/data-loss-prevention.jpg
+title_image: /images/data-loss-prevention.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

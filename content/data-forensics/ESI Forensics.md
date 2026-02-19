@@ -3,7 +3,7 @@ title: ESI Forensics
 description: >-
   Electronically stored information (ESI) can reveal clues or information that can be of vital importance to the outcome of legal proceedings or investigations.
 weight: 2
-title_image: images/esi-forensics.jpg
+title_image: /images/esi-forensics.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

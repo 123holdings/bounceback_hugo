@@ -3,7 +3,7 @@ title: Desktop Recovery
 description: >-
   Most computers store data on one or more 3.5” desktop-sized hard drives. Desktop hard drives are physically larger than laptop hard drives and can generally store more data. They also consume more power and may me more susceptible to certain types of failure.
 weight: 1
-title_image: images/desktop data recovery.jpg
+title_image: /images/desktop data recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

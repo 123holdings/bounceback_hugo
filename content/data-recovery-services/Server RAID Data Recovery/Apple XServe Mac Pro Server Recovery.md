@@ -3,7 +3,7 @@ title: Apple XServe/Mac Pro Server Recovery
 description: >-
   XServe systems can make for complex recoveries as they typically use the HFS+ file system. Most commercial RAID recovery software isn’t designed for use on the HFS+ machines. We circumvent this problem by developing in-house tools specifically for use with XServe technology.
 weight: 3
-title_image: images/xserver-xsan.webp
+title_image: /images/xserver-xsan.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

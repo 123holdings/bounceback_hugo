@@ -3,7 +3,7 @@ title: Flash Media Recovery
 description: >-
   Flash media is undoubtedly one of the most exciting new data storage mediums thanks to fast read/write speeds and a lack of moving parts.
 weight: 2
-title_image: images/flash-media-recovery.jpeg
+title_image: /images/flash-media-recovery.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

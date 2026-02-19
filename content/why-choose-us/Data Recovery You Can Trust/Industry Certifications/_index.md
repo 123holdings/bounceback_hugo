@@ -1,11 +1,9 @@
 ---
 title: Industry Certifications
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
-title_image: images/industry-certification.webp
+  This certification covers the classification of cleanliness as it pertains to cleanrooms and other controlled environments. Our experts only work on your drives in a safe certified ISO cleanroom environment to prevent any further damage to the sensitive components found within. Strict adherence to ISO 14644-1 guidelines is also verified by an outside auditor.
+    wellness programs.
+title_image: /images/industry-certification.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

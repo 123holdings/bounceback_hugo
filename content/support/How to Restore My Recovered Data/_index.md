@@ -7,7 +7,7 @@ description: >-
   wellness programs.
 
 weight: 1
-title_image: images/restore-recovered-data.webp
+title_image: /images/restore-recovered-data.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

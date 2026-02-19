@@ -3,7 +3,7 @@ title: "Encrypted File and Encrypted Hard Drive Data Recovery"
 description: >-
   Encryption, however, makes the already complex process of data recovery even more so. Fortunately, BounceBack has the professionals and expertise required to tackle the tough job of recovering encrypted data.
 weight: 3
-title_image: "images/encrypted-data-security-recovery.jpg"
+title_image: "/images/encrypted-data-security-recovery.jpg"
 booking_button:
   enable: true
   label: Start My Recovery Now

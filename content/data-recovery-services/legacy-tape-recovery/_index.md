@@ -3,7 +3,7 @@ title: Legacy Tape Recovery
 description:
 
 weight: 12
-title_image: images/legacy-tap-recorder.webp
+title_image: /images/legacy-tap-recorder.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

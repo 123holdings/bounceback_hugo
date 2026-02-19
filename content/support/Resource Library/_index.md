@@ -6,7 +6,7 @@ description: >-
   wellness programs.
 
 wieght: 3
-title_image: images/resources-library.webp
+title_image: /images/resources-library.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

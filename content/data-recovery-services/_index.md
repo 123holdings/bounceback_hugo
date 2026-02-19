@@ -3,7 +3,7 @@ title: Data Recovery
 description: >-
   Our data recovery services come with our BounceBack guarantee: If we don’t recover it, you don’t pay. Our quotes are firm and all-inclusive. Your recovery job will never cost any more than the quoted price. Our data recovery experts work in a Class 100 ISO 14644-1 Certified cleanroom to ensure no further damage comes to your valuable files.
 
-title_image: images/data-recovery.jpg
+title_image: /images/data-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

@@ -1,11 +1,9 @@
 ---
 title: ISO 9001 Certification
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
+  When customers trust a company to do a job properly, ISO Certification is the definitive basis for that trust. **ISO 9001:2008** standards are a quality management system designed to help organizations meet customer needs.
   wellness programs.
-title_image: images/iso-logo.jpeg
+title_image: /images/iso-logo.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

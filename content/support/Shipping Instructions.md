@@ -7,7 +7,7 @@ description: >-
   wellness programs.
 
 weight: 2
-title_image: images/shipping-instruction.jpg
+title_image: /images/shipping-instruction.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

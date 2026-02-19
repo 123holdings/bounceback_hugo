@@ -2,7 +2,7 @@
 title: Glossary of IT Terms
 description:
 weight: 4
-title_image: images/it-grossery.jpeg
+title_image: /images/it-grossery.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

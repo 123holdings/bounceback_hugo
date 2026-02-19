@@ -3,7 +3,7 @@ title: Recovery Point Objective (RPO) and Recovery Time Objective (RTO)
 description: >-
   At BounceBack Data Recovery we want to be an integral part of your plans to meet your recovery point objectives (RPO) and recovery time objectives (RTO). We can help with data recovery, backup implementation and retrieval, and meeting your time goals when minutes matter.
 weight: 7
-title_image: images/time-is-passing-blue-hourglass-close-up.jpg
+title_image: /images/time-is-passing-blue-hourglass-close-up.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

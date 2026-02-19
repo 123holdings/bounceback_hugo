@@ -1,12 +1,10 @@
 ---
 title: Data Recovery You Can Trust
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
+  When it comes to having an outside company recover your data for you, trust is a major issue. How can you know that we won’t further damage your drive? How do you know that your private files are secure? So, why trust BounceBack Data Recovery with your sensitive data? Here’s why
   wellness programs.
 weight: 1
-title_image: images/data-recovery-trust.webp
+title_image: /images/data-recovery-trust.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

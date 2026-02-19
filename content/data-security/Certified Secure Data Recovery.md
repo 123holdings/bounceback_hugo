@@ -4,7 +4,7 @@ description: >-
   This certification covers the classification of cleanliness as it pertains to cleanrooms and other controlled environments. Our experts only work on your drives in a safe certified ISO cleanroom environment to prevent any further damage to the sensitive components found within. Strict adherence to ISO 14644-1 guidelines is also verified by an outside auditor.
 
 weight: 1
-title_image: images/certified-secured-data-recovery.webp
+title_image: /images/certified-secured-data-recovery.webp
 booking_button:
   enable: true
   label: Start My Recovery Now

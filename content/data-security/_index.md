@@ -2,7 +2,7 @@
 title: Data Security
 description: >-
   When choosing a data recovery company, the primary concern for businesses, educators, and government entities is the security of their confidential data. It requires a high level of trust to grant an outside party access to classified files and sensitive information.
-title_image: images/data-security.jpg
+title_image: /images/data-security.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

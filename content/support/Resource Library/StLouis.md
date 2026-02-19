@@ -5,7 +5,7 @@ description: >-
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 6
-title_image: images/st-luis-headquarter.jpeg
+title_image: /images/st-luis-headquarter.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

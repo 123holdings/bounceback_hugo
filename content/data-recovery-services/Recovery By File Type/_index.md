@@ -4,7 +4,7 @@ description: >-
   Different file types can present their own complexities in the data recovery process independent of any issues with the storage media. Often, files can be corrupted, deleted, or fall victim to some other kind of logical failure with no physical problems being exhibited by the storage medium.
 
 weight: 6
-title_image: images/file-data-recovery.webp
+title_image: /images/file-data-recovery.webp
 booking_button:
 booking_button:
   enable: true

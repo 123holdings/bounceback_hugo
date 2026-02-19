@@ -3,7 +3,7 @@ title: E-Mail Recovery
 description: >-
   Losing e-mails can be disastrous for a business, especially if all of a user’s e-mails were kept in a single archive. Unfortunately, e-mail archives like Outlook PSTs can quickly become enormous when associated with a busy user.
 weight: 1
-title_image: images/email-recovery.jpg
+title_image: /images/email-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

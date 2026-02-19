@@ -3,7 +3,7 @@ title: Solid State Drive Recovery
 description: >-
   Solid state drives are a newer technology that combines the speed of flash memory with the flexibility of a standard hard drive. Some newer computers ship with SSD’s, especially laptops and net books. Many computer users decide to purchase solid state drives when building PCs to improve the data read/write speeds of their computers.
 weight: 3
-title_image: images/SSD data recovery.jpg
+title_image: /images/SSD data recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

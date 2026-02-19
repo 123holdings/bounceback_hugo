@@ -3,7 +3,7 @@ title: Hard Drive Data Recovery
 description: >-
   Hard drive data recovery is an involved process which requires attention to detail, years of training and dozens of specialized tools. Whether data is lost due to physical damage, accidental deletion or file corruption, experienced engineers must approach each case differently to ensure the best possible chances of a successful data recovery.
 weight: 2
-title_image: images/hard drive data recovery.jpg
+title_image: /images/hard drive data recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

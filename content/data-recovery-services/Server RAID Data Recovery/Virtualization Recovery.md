@@ -3,7 +3,7 @@ title: Virtualization Recovery
 description: >-
   Vitrtualization has allowed organizations to increase productivity for computer hardware and consolidate operating systems. This translates into substantial savings and significant boosts in efficiency.
 weight: 4
-title_image: images/visual data recovery.jpg
+title_image: /images/visual data recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

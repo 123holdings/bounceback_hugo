@@ -3,7 +3,7 @@ title: Other Services
 description: >-
   Data has become more mobile and easily transferable than ever before. Mobile devices and flash media technology present unique obstacles in the data recovery process that require an expertise that goes above and beyond traditional mechanical recovery techniques.
 weight: 10
-title_image: images/otherservices.jpeg
+title_image: /images/otherservices.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

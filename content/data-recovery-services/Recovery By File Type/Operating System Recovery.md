@@ -3,7 +3,7 @@ title: Operating System Recovery
 description: >-
   In some cases, data recovery of individual files isn’t enough. Many businesses use computers and servers with specialized operating systems, and when these devices fail, the consequences are severe.
 weight: 3
-title_image: images/os-recovery.jpg
+title_image: /images/os-recovery.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

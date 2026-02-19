@@ -4,7 +4,7 @@ description: >-
   BounceBack Data Recovery has a proven track record saving businesses from potential failure due to server crashes and data loss. Losing large amounts of data and extended downtime can be catastrophic for organizations and businesses.
 
 weight: 3
-title_image: images/Server & RAID Data Recovery.jpg
+title_image: /images/Server & RAID Data Recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

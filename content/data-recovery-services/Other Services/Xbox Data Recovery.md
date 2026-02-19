@@ -4,7 +4,7 @@ meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
   Data recovery for the Xbox is different from other systems in that the Xbox stores data in a proprietary way. The Xbox uses the FatX filesystem to begin with.
 weight: 3
-title_image: images/xbox-data-recovery.jpg
+title_image: /images/xbox-data-recovery.jpg
 booking_button:
   enable: true
   label: Start My Recovery Now

@@ -5,7 +5,7 @@ description: >-
   diagnostic tests, surgical procedures, chronic disease management, and
   wellness programs.
 weight: 1
-title_image: images/aes-encripted-recovery.jpeg
+title_image: /images/aes-encripted-recovery.jpeg
 booking_button:
   enable: true
   label: Start My Recovery Now

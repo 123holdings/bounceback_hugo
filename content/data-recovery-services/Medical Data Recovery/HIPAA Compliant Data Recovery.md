@@ -3,7 +3,7 @@ title: HIPAA Compliant Data Recovery
 description: >-
   BounceBack Data Recovery will happily work with your organization to ensure that your data recovery job is HIPAA compliant. Per the Health Insurance Portability and Accountability Act, all covered entities must have business associate contracts with those companies with whom it is necessary for them to share private records or data.
 weight: 1
-title_image: images/hippa-data-recovery.webp
+title_image: /images/hippa-data-recovery.webp
 booking_button:
   enable: true
   label: Start My Recovery Now
