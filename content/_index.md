@@ -9,44 +9,36 @@ content_blocks:
       - heading: Data Recovery
         schedule: Secure, confidential, and reliable data restoration
         button: Call Now
-        button_url: "+201004000777"
+        button_url: "3146903009"
       - heading: Data Security
         schedule: Keeping your data safe, private, and fully protected
         button: Call Now
-        button_url: "+201002665777"
+        button_url: "16363330030"
       - heading: DIgital Forensics
         schedule: Certified forensic analysis you can rely on
         button: Call Now
-        button_url: "+201004000776"
+        button_url: "3146903009"
   - _bookshop_name: colorful-boxes
     enable: true
     light_green_dark_card:
-      image: images/hard-drive-recovery-icon.jpeg
-      image_description: Ship Your Media
       heading: Hard Drive Data Recovery
       text: >-
         BounceBack Data Recovery provides expert, nondestructive hard drive recovery with advanced tools and 15 years’ experience, offering free estimates, no-recovery-no-fee guarantee, cleanroom repairs, and secure data transfer.
       button: More Info
       button_url: /data-recovery-services/hard-drive-data-recovery/
     light_green_light:
-      image: images/Specialized Services.png
-      image_description: Server & RAID Data Recovery
       heading: Server Data Recovery
       text: >-
         BounceBack Data Recovery specializes in server recovery, including RAID, SAN/NAS, and Apple XServe systems. With expert technicians, proprietary tools, and remote support, they minimize downtime and restore critical business data efficiently.
       button: More Info
       button_url: /data-recovery-services/server-raid-data-recovery/
     dark_green_light_card:
-      image: images/Online Medicine.png
-      image_description: Medical Data Recovery
       heading: Medical Data Recovery
       text: >-
         BounceBack Data Recovery provides secure, HIPAA-compliant medical data recovery for patient, billing, and imaging records, with strict security protocols, encrypted recovery, business associate agreements, and guaranteed data restoration.
       button: More Info
       button_url: /data-recovery-services/medical-data-recovery/
     dark_green_dark:
-      image: images/New Services.png
-      image_description: Cell Phone Data Recovery
       heading: Cell Phone Data Recovery
       text: >-
         BounceBack Data Recovery restores lost cell phone data—including texts, photos, and call logs—across devices and memory cards, offering free evaluations, customized recovery methods, secure handling, and pricing typically between $700–$1200.
@@ -56,7 +48,7 @@ content_blocks:
     enable: true
     heading: Why Choose Us?
     image: /images/home/bounceback-why-choose-us.jpg
-    image_description: ""
+    image_description: "a person is looking at microscope"
     title:
     text: >-
       This is a small company, run by one person who has been in the industry since 2000.  Transparent and honest service is, unfortunately, a rare commodity in this industry.  The goal of BounceBack is to trump the competition from the strategic position of this moral high ground, while offering the best work and service possible with every customer.
@@ -66,7 +58,7 @@ content_blocks:
     enable: true
     heading: BounceBack Data Recovery
     image: /images/home/bounceback-data-recovery-home.jpg
-    image_description: ""
+    image_description: "motherboard"
     title:
     text: >-
       BounceBack Data Recovery specializes in salvaging lost, damaged, or otherwise compromised data from all different types of electronic media storage devices. We strive to offer competitive pricing, quick turnaround, and professional and friendly customer service. Our price quotes are firm and all-inclusive… you will never be charged more than the agreed upon quote. And if we don’t recover your data, you don’t pay.
@@ -102,37 +94,6 @@ content_blocks:
             button_label: See on Gooogle Review
             button_link: https://maps.app.goo.gl/RynefsZ32xCYeMBaA
 
-  - _bookshop_name: home-clinics
-    enable: false
-    heading: Our Clinics
-    text: >-
-      Offering over 30 specialties, the medical care center is committed to
-      providing high-quality healthcare to patients. With a wide range of health
-      services, including outpatient care, GIT endoscopies, and inpatient
-      surgical procedures, the center ensures high-quality health care services.
-      Patients can expect superior health care services in a state-of-the-art
-      environment, focused on delivering the best medical outcomes.
-    button: Show All
-    button_url: /clinics
-  - _bookshop_name: covid
-    enable: false
-    image: /images/covid-bg.webp
-    text: >-
-      Health and longevity are not just trending topics but are central to
-      happiness and well-being. We believe that patient education is one of the
-      most important aspects of healthcare. It is our duty not only to provide
-      professional medical services but also to educate patients in disease
-      prevention. With so many misleading, buzzword-filled articles frequently
-      appearing on social media and in the mainstream press, we simplify what
-      lies behind the scenes through the expertise of experienced medical
-      generalists and specialists. Stay informed with our latest blog updates!
-    button: Read More
-    button_url: /health-tips
-  - _bookshop_name: meet-doctors
-    enable: false
-    heading: MEET OUR DOCTORS
-    button: Show All
-    button_url: /doctors
   - _bookshop_name: google-map
     text: Hello World!
     enable: true

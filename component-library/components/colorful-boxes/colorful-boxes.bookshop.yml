@@ -11,32 +11,24 @@ spec:
 blueprint:
     enable: true
     light_green_dark_card:
-      image: "/images/clinic.png"
-      image_description: Our Clinics icon
       heading: Our Clinics
       text: Outpatient consultations in over 30 specializations, working together as
         one unit and with patient records
       button: More Info
       button_url: "/clinics"
     light_green_light:
-      image: "/images/handshake.png"
-      image_description: Specialized Services icon
       heading: Specialized Services
       text: Inpatient complimentary services include surgical center, endoscopy, ultrasound,
         and more. Servicing clinics and also available standalone to outside consultants
       button: More Info
       button_url: "/services"
     dark_green_light_card:
-      image: "/images/online.png"
-      image_description: Online Consultations icon
       heading: Online Consultations
       text: Online consultations are available in most of Oasis’ outpatient specializations,
         with our top doctors
       button: Request Now
       button_url: "/doctors"
     dark_green_dark:
-      image: "/images/location.png"
-      image_description: New Services icon
       heading: New Services
       text: Oasis Clinics also arranges for home visits, including checkups and investigations
         with portable medical devices

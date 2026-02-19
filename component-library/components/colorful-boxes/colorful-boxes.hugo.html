@@ -7,12 +7,14 @@
                 <div class="colorful-boxes__card colorful-boxes__card--green-dark">
                     <div class="colorful-boxes__text-wrap">
                         <div class="colorful-boxes__header">
+                            {{/*
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
                                 {{$img}}
                                 {{- $img_destop:= $img.Resize "webp 40x" -}}
                                 <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
                             {{- end -}}
+                            */}}
                             <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
                         </div>
                         <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
@@ -26,11 +28,13 @@
                 <div class="colorful-boxes__card colorful-boxes__card--green-light">
                     <div class="colorful-boxes__text-wrap">
                         <div class="colorful-boxes__header">
+                            {{/*
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
                                 {{- $img_destop:= $img.Resize "webp 40x" -}}
                                 <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
                             {{- end -}}
+                            */}}
                             <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
                         </div>
                         <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
@@ -44,11 +48,13 @@
                 <div class="colorful-boxes__card colorful-boxes__card--green-dark">
                     <div class="colorful-boxes__text-wrap">
                         <div class="colorful-boxes__header">
+                            {{/*
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
                                 {{- $img_destop:= $img.Resize "webp 40x" -}}
                                 <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
                             {{- end -}}
+                            */}}
                             <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
                         </div>
                         <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
@@ -62,11 +68,13 @@
                 <div class="colorful-boxes__card colorful-boxes__card--green-light">
                     <div class="colorful-boxes__text-wrap">
                         <div class="colorful-boxes__header">
+                            {{/*
                             {{- if fileExists (add `assets/` (printf "%s" .image)) -}}
                                 {{- $img:= resources.Get  (printf "%s" .image) -}}
                                 {{- $img_destop:= $img.Resize "webp 40x" -}}
                                 <img class="colorful-boxes__icon" src="{{$img_destop.Permalink}}" alt="{{.image_description}}">
                             {{- end -}}
+                            */}}
                             <h2 class="colorful-boxes__heading">{{.heading | markdownify}}</h2>
                         </div>
                         <div class="colorful-boxes__text">{{.text | markdownify | emojify}}</div>
