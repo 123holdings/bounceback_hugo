@@ -5,7 +5,7 @@ description: >-
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z
-title_image: images/xbox-data-recovery.jpg
+title_image: /images/xbox-data-recovery.jpg
 excerpt: >-
   See the new page we put up about Xbox data recovery at [http://bouncebackdatarecovery.com/data-recovery-services/xbox-data-recovery/](http://bouncebackdatarecovery.com/data-recovery-services/xbox-data-recovery/)
 

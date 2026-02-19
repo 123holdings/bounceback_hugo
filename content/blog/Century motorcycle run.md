@@ -5,7 +5,7 @@ description: >-
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z
-title_image: images/Century motorcycle run.jpeg
+title_image: /images/Century motorcycle run.jpeg
 excerpt: >-
   St. Louis police impounded dozens of motorcycles participating in the recent ride of the century motorcycle run this weekend. BounceBack data recovery is often contacted to recover data from the helmet cams of motorcycle riders whose stunts well… resulted in the need for data recovery services. Anecdotal evidence points toward a surprising correlation between those with motorcycle helmet cameras and those who are involved in accidents resulting in severe injury or death. Be careful out there!
 

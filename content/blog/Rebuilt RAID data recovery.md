@@ -5,7 +5,7 @@ description: >-
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z
-title_image: images/Server & RAID Data Recovery.jpg
+title_image: /images/Server & RAID Data Recovery.jpg
 excerpt: >-
   BounceBack has begun work for a premiere phone recording company. Many people require this critical data for legal purposes. This particular raid had two drives that failed. The two drives were replaced and fsck was run in an attempt to repair it. There was also a partial rebuild attempt. It’s important to note that when you have a raid where a drive has failed its imperative to clone each drive in the RAID before anything else is done. Most RAID ...
 button_name: Read More
