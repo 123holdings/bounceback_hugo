@@ -1,154 +1,107 @@
 ---
 title: Privacy Policy
-date: 2026-02-05T08:40:19+06:00
+date: 2026-02-09T08:40:19+06:00
 layout: privacy-policy
-draft: true
+draft: false
 ---
 
-## BounceBack Data Recovery
+## Privacy Policy (Template) — BounceBack Data Recovery LLC
 
-Last Updated: February 2026
+**Effective Date: [2/19/26]**
 
-BounceBack Data Recovery (“we,” “our,” or “us”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our website or services.
+**Last Updated: [2/19/26]**
+
+BounceBack Data Recovery LLC (“BounceBack,” “we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect information when you visit bouncebackdatarecovery.com (the “Site”), contact us, or use our services, including text messaging/SMS communications.
 
 ### 1. Information We Collect
 
-We may collect the following types of information:
+We may collect the following categories of information:
 
-Personal Information
+##### A. Information you provide to us
 
-Full name
+- Contact details (name, email address, phone number, mailing address)
+- Business information (company name, job title)
+- Service details (device type, symptoms, recovery needs, shipping information)
+- Payment information (processed by third-party payment processors; we generally do not store full card numbers)
+- Communications (emails, chat messages, phone call notes, and text messages)
 
-Email address
+#### B. Information collected automatically
 
-Phone number
+- Device and browser data (IP address, browser type, operating system)
+- Site usage information (pages visited, time spent, links clicked)
+- Cookies or similar technologies (see Section 6)
 
-Company name
+### 2) How We Use Your Information
 
-Billing information
+#### We use information to:
 
-Shipping address (if devices are sent to us)
+- Provide and manage data recovery and related services
+- Respond to inquiries and customer support requests
+- Send service updates, appointment and pickup/delivery coordination, billing notices, and other transactional messages
+- Improve our Site, services, security, and customer experience
+- Comply with legal obligations and enforce our agreements
 
-Device & Case Information
+### 3) Text Messaging / SMS Communications
 
-Device type (HDD, SSD, RAID, USB, etc.)
+**If you provide your mobile phone number and opt in to receive text messages from us, we may send texts related to:**
 
-Brand and model
+- Scheduling, service status, pickup/drop-off coordination, and customer support
+- Estimates, invoices, and payment reminders (when applicable)
+- Important service notifications
+- Message frequency varies. Message and data rates may apply.
+- Opt-out: You can stop receiving texts at any time by replying STOP.
+- Help: Reply HELP for assistance or contact us using the information in Section 10.
+- Consent: Your consent to receive text messages is not a condition of purchase.
 
-Description of data loss issue
+### 4) How We Share Information
 
-Storage capacity
+We do not sell your personal information.
 
-Any information voluntarily provided in support requests
+#### We may share information in limited circumstances:
 
-Technical Information
+Service providers who help us operate (e.g., phone/SMS providers like Office@Hand, hosting providers, analytics, payment processors, shipping carriers). They may only use information to perform services for us.
+Legal and compliance needs (e.g., to comply with subpoenas, court orders, or to protect rights, safety, and prevent fraud).
+Business transfers (e.g., merger, acquisition, or sale of assets), where information may be transferred as part of that transaction.
+SMS Sharing Statement:
 
-IP address
+No mobile information will be shared with third parties/affiliates for marketing or promotional purposes. We may share mobile information with service providers who assist in delivering our communications (including SMS), but only for providing services on our behalf.
 
-Browser type
+### 5) Data Security.
 
-Pages visited
+We use reasonable administrative, technical, and physical safeguards designed to protect your information. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.
 
-Cookies and usage data
+### 6) Cookies and Analytics
 
-### 2. How We Use Your Information
+#### We may use cookies and similar technologies to:
 
-We use your information to:
+- Operate and improve the Site
+- Understand usage and performance
+- Remember preferences
 
-Provide data recovery services
+You can control cookies through your browser settings. Some features may not work properly if cookies are disabled.
 
-Respond to inquiries and support requests
+### 7) Data Retention
 
-Process payments
+We retain personal information only as long as necessary for the purposes described in this policy, including to comply with legal, accounting, or reporting requirements.
 
-Improve our website and services
+### 8) Your Choices and Rights
 
-Communicate service updates
+Depending on where you live, you may have rights to:
 
-Maintain internal records
+- Request access to or correction of your personal information
+- Request deletion of personal information (subject to legal exceptions)
+- Opt out of certain communications
+  To make a request, contact us using Section 10.
 
-We do not sell, rent, or trade your personal information to third parties.
+### 9) Children’s Privacy
 
-### 3. Data Confidentiality & Security
+Our Site and services are not directed to children under 18, and we do not knowingly collect personal information from children under 18.
 
-BounceBack Data Recovery understands the sensitive nature of lost data.
+### 10) Contact Us
 
-We:
+If you have questions about this Privacy Policy or our privacy practices, **contact**:
 
-Treat all recovered data as strictly confidential
-
-Use secure systems and restricted access controls
-
-Delete recovered data after delivery unless otherwise requested
-
-Follow industry-standard security practices
-
-Recovered data is only accessed for the purpose of completing the recovery process.
-
-### 4. Cookies
-
-Our website may use cookies to:
-
-Improve user experience
-
-Analyze traffic
-
-Remember preferences
-
-You may disable cookies in your browser settings at any time.
-
-### 5. Third-Party Services
-
-We may use trusted third-party services for:
-
-Payment processing
-
-Website analytics
-
-Hosting services
-
-These providers only receive necessary information to perform their services and are required to maintain confidentiality.
-
-### 6. Data Retention
-
-We retain personal information only as long as necessary to:
-
-Complete your service request
-
-Comply with legal obligations
-
-Resolve disputes
-
-Recovered data may be permanently deleted after service completion unless agreed otherwise.
-
-### 7. Your Rights
-
-Depending on your location, you may have the right to:
-
-Request access to your personal data
-
-Request correction of inaccurate data
-
-Request deletion of your data
-
-Withdraw consent for communications
-
-To exercise these rights, please contact us.
-
-### 8. Children’s Privacy
-
-Our services are not directed toward individuals under the age of 18. We do not knowingly collect personal data from minors.
-
-### 9. Changes to This Policy
-
-We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised “Last Updated” date.
-
-### 10. Contact Us
-
-If you have any questions about this Privacy Policy, please contact:
-
-BounceBack Data Recovery
-Email: your@email.com
-
-Phone: +XXX-XXXXXXX
-Website: https://yourdomain.com
+**BounceBack Data Recovery LLC** <br>
+Email: support@bouncebackdata.com <br>
+Phone: 314-690-3009 <br>
+Mailing Address: 6 Cardinal Way, St. Louis MO 63102 <br>

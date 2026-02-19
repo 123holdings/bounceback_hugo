@@ -36,6 +36,9 @@ enable = true
 label = "Recover Now"
 link = "/start-my-recovery/"
 
+[privacy_button]
+label = "Privacy Policy"
+link = "/privacy-policy/"
 
 
 ############################# contact page social site ########################
