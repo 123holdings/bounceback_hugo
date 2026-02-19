@@ -1,6 +1,6 @@
 paths:
-  uploads: static/uploads
-  static: static
+  static: assets
+  uploads: assets/images
 collections_config:
   pages:
     path: content
