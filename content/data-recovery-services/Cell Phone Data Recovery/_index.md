@@ -13,7 +13,7 @@ booking_button:
   label: Start My Recovery Now
   url: /start-my-recovery/
 ---
-## Descriptions:
+## Description:
 
 BounceBack Data Recovery has the expertise and dedicated equipment to recover lost or corrupted data from most cell phones on the market today. We service all manufacturers, programming languages and operating systems. Perhaps nothing in the field of data storage is as varied and changing as cell phone technology. BounceBack has years of experience servicing these devices and our technicians undergo ongoing training to stay at the front of the cell phone data recovery industry.
 
