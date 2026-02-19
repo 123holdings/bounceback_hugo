@@ -1,10 +1,7 @@
 ---
 title: Cell Phone Data Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  BounceBack Data Recovery has the expertise and dedicated equipment to recover lost or corrupted data from most cell phones on the market today. We service all manufacturers, programming languages and operating systems. Perhaps nothing in the field of data storage is as varied and changing as cell phone technology.
 weight: 5
 title_image: images/cell-phone-data-recovery-2.jpg
 booking_button:

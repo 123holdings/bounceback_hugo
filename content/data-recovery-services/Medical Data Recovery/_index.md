@@ -1,10 +1,7 @@
 ---
 title: Medical Data Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  When seeking out medical data recovery services, customers usually have two basic but essential concerns. First, they want to know if a data recovery company has the expertise and capabilities to recover patient, billing, and scanned image records from their damaged or corrupted media.
 weight: 4
 title_image: images/medical-data-recovery.webp
 booking_button:

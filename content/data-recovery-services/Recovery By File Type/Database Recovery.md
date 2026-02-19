@@ -1,10 +1,7 @@
 ---
 title: Database Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  A database is simply a system intended to organize, store, and retrieve vast amounts of data easily. Anybody who works with databases or has experienced database damage or corruption can imagine how troubling it can be when you can longer access your valuable data.
 weight: 2
 title_image: images/database-recovery.jpg
 booking_button:

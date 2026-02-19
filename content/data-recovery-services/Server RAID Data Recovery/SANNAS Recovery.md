@@ -1,9 +1,7 @@
 ---
 title: SAN/NAS Recovery
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  SAN is an acronym for Storage Area Network. NAS stands for Network Attached Storage. Simply put, both NAS and SAN are intended to store large amounts of data that can be easily accessed by any computer attached to their network. A NAS will appear to your operating system as a file server, while a SAN will appear as a disk.
 weight: 2
 title_image: images/sannas-recovery.webp
 booking_button:

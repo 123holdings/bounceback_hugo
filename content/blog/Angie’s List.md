@@ -1,6 +1,5 @@
 ---
 title: Angie’s List
-meta_title: 11 Strategies for a Heart-Healthy Lifestyle | Oasis Clinics
 description: >-
   We just created an Angie’s list account.  You can get there by clicking here and searching for BounceBack Data Recovery, Inc.
 layout: blog-details

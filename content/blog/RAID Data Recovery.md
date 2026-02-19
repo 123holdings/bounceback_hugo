@@ -1,10 +1,7 @@
 ---
 title: RAID Data Recovery
-meta_title: 11 Strategies for a Heart-Healthy Lifestyle | Oasis Clinics
 description: >-
-  Adopt these 11 proven strategies for a heart-healthy lifestyle. Learn about
-  healthy eating, exercise, stress management, and regular screenings to lower
-  your risk of heart disease.
+  BounceBack’s St Louis cleanroom lab just recovered a very complicated Inforstor iSCSI RAID. It was two separate RAID configurations which were then arrayed together. Essentially a “nested” RAID within a RAID.
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z

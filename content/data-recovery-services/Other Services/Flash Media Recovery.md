@@ -1,10 +1,7 @@
 ---
 title: Flash Media Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Flash media is undoubtedly one of the most exciting new data storage mediums thanks to fast read/write speeds and a lack of moving parts.
 weight: 2
 title_image: images/flash-media-recovery.jpeg
 booking_button:

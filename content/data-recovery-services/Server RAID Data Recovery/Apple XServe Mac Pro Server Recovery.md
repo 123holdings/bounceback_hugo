@@ -1,9 +1,7 @@
 ---
 title: Apple XServe/Mac Pro Server Recovery
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  XServe systems can make for complex recoveries as they typically use the HFS+ file system. Most commercial RAID recovery software isn’t designed for use on the HFS+ machines. We circumvent this problem by developing in-house tools specifically for use with XServe technology.
 weight: 3
 title_image: images/xserver-xsan.webp
 booking_button:

@@ -1,10 +1,7 @@
 ---
 title: Laptop Data Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Laptop data recovery has high success rates because many newer laptop HDDs are designed to be resistant to physical damage. Many have a special construction which absorbs shock and some laptops are shock-mounted for additional protection.
 weight: 2
 title_image: images/laptop-data-recovery.jpg
 booking_button:

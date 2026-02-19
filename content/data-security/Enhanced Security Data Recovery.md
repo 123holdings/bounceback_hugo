@@ -10,22 +10,22 @@ booking_button:
 
 ## Description:
 
-Entrusting your sensitive and valuable data to an outside entity is a major consideration when choosing a data recovery company.
+Data security is the topmost concern for customers when it comes time to choose a data recovery company. Security of your sensitive and valuable data is our highest priority at BounceBack Data Recovery.
 
-Passwords, confidential files, private e-mails, financial information; these are but a few of the things that can potentially be compromised in the wrong hands. At BounceBack, we adhere to the maximum protocols to meet the most rigorous security requirements when working on your classified data.
+### Non-Disclosure Agreement
 
-BounceBack has earned the following certifications to help ensure the security of your data:
+At your request, we will happily sign a binding non-disclosure agreement. With or without a non-disclosure agreement, your data is handled with the utmost care from the beginning of the process to the end.
 
-### ISO 14644-1 Clean Room Certification (Class 100 Clean Room)
+### Chain of Custody Protocol
 
-This certification covers the classification of cleanliness as it pertains to cleanrooms and other controlled environments. Our experts only work on your drives in a safe certified ISO cleanroom environment to prevent any further damage to the sensitive components found within. Strict adherence to ISO 14644-1 guidelines is also verified by an outside auditor.
+Our engineers follow a chain of custody protocol similar to those implemented by law enforcement organizations. Your data is accounted for from the beginning of the process until recovery is complete.
 
-### Cisco Self-Defending Network
+### Fire-Proof Safe
 
-Our network must be able to respond to intrusions while maintaining availability and reliability. If our network isn’t safe, your data isn’t safe. That’s why we have implemented a Cisco Self-Defending Network that remains active at all times, and can even react to an intrusion with no human interaction. Our network is constantly monitored, giving us plenty of time to focus on recovering your data.
+With the enhanced security procedure, all of your valuable media is stored in a fireproof safe when not being worked on and during closing hours. This ensures your data is protected from theft, flood, fire, and physical damage.
 
-### ISO 9001:2008 Certification
+### Top-Priority Case Status
 
-When customers trust a company to do a job properly, ISO Certification is the definitive basis for that trust. ISO 9001:2008 standards are a quality management system designed to help organizations meet customer needs. This means that BounceBack Data Recovery must adhere to strict guidelines and procedures from the beginning of the data recovery process to the end. Adherence to these guidelines is verified by an outside auditor. This ensures that none of our customers or our jobs slips through the cracks or receives substandard service. We do it right every time, and if a non-compliance issue arises it is addressed and remedied immediately.
+All enhanced security data recovery jobs are given top priority status throughout the recovery process. You will also be updated on the status of your recovery at every step.
 
-Enhanced security data recovery is available as well in which we utilize a chain of custody protocol, storage in a fireproof safe, and a non-disclosure agreement.
+If your data is [encrypted](/data-security/encrypted-data-recovery/), we can create sector-by-sector images of your drive and transfer those images to a separate drive with the original encryption intact. This way, your data can be recovered in a safe and secure fashion without the encryption key having to be given to an outside entity. If you choose to release your key, data can be decrypted on site to ensure its integrity. We adhere to the maximum protocols to meet the most rigorous security requirements when working on your encrypted data. BounceBack has a Cisco Self-Defending Network. Upon completion of your recovery job, all clones of your drives are destroyed. No copy of your data will be kept on any medium by BounceBack Data Recovery.

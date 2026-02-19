@@ -1,10 +1,7 @@
 ---
 title: eDiscovery Services
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Electronic evidence is an increasingly prevalent part of modern litigation. Often this evidence appears to be lost forever, but is actually waiting to be found.
 weight: 1
 title_image: images/e-discovery.webp
 booking_button:

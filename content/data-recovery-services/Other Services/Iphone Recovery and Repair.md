@@ -1,10 +1,7 @@
 ---
 title: Iphone Recovery and Repair
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  The sheer volume of iPhone recovery requests that we receive here at BounceBack have prompted us to add a separate set of services relating to iPhones.
 weight: 1
 title_image: images/iphone-recovery.jpg
 booking_button:

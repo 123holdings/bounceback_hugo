@@ -1,7 +1,7 @@
 ---
 title: BounceBack Data Recovery
 description: >-
-  We just created an Angie’s list account.  You can get there by clicking here and searching for BounceBack Data Recovery, Inc.
+  BounceBack Data Recovery specializes in salvaging lost, damaged, or otherwise compromised data from all different types of electronic media storage devices. We strive to offer competitive pricing, quick turnaround, and professional and friendly customer service.
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z

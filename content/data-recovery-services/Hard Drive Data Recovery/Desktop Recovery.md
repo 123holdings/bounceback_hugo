@@ -1,10 +1,7 @@
 ---
 title: Desktop Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Most computers store data on one or more 3.5” desktop-sized hard drives. Desktop hard drives are physically larger than laptop hard drives and can generally store more data. They also consume more power and may me more susceptible to certain types of failure.
 weight: 1
 title_image: images/desktop data recovery.jpg
 booking_button:

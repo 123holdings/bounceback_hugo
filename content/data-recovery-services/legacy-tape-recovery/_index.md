@@ -1,10 +1,7 @@
 ---
 title: Legacy Tape Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
-description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+description:
+
 weight: 12
 title_image: images/legacy-tap-recorder.webp
 booking_button:

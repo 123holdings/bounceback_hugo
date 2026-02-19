@@ -1,10 +1,7 @@
 ---
 title: Digital Photo Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Of all the recovery jobs we see, loss of treasured digital photos is particularly devastating to our customers. At BounceBack we are often able to recovery lost, deleted, or damaged photos, often in a matter of minutes.
 weight: 4
 title_image: images/digital-photo-recovery.jpg
 booking_button:

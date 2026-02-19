@@ -1,10 +1,7 @@
 ---
 title: Operating System Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  In some cases, data recovery of individual files isn’t enough. Many businesses use computers and servers with specialized operating systems, and when these devices fail, the consequences are severe.
 weight: 3
 title_image: images/os-recovery.jpg
 booking_button:

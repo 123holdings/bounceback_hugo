@@ -1,9 +1,7 @@
 ---
 title: Virtualization Recovery
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Vitrtualization has allowed organizations to increase productivity for computer hardware and consolidate operating systems. This translates into substantial savings and significant boosts in efficiency.
 weight: 4
 title_image: images/visual data recovery.jpg
 booking_button:

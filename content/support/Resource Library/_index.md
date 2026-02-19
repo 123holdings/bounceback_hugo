@@ -17,8 +17,8 @@ booking_button:
 
 Our goal with our resource library is to develop a comprehensive resource for customers to go to for useful information. If you have any suggestions for our resource page then please let us know at info@bouncebackdatarecovery.com. Below are some useful links to common areas of interest.
 
-A) Data Loss Prevention
+A) [Data Loss Prevention](/support/resource-library/data-loss-prevention/)
 
-B) Case Studies
+B) [Case Studies](/support/resource-library/case-studies/)
 
-C) Glossary of IT Terms
+C) [Glossary of IT Terms](/support/resource-library/glossary-of-it-terms/)

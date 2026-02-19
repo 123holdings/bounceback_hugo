@@ -1,28 +1,13 @@
 #################### default parameters ################################
-# favicon
-favicon = "images/favicon.png"
-# logo
 logo = "images/bounceback-logo.png"
-# use `x` with logo_width, example: "100x"
-logo_width = ""
-# logo text will only show when logo is missing.
 logo_text = "BounceBack Data Recovery"
-# OpenGraph / Twitter Card metadata
 description = "BounceBack Data Recovery delivers secure, professional data recovery services for hard drives, servers, medical records, and mobile devices, ensuring privacy, reliability, and peace of mind."
 author = "BounceBack Data Recovery"
-image = "/images/oasis-clinics-logo.png" # this image will be used as fallback if a page has no image of its own
+image = "/images//data-recovery.jpg" # this image will be used as fallback if a page has no image of its own
 
 # footer information
 footer_info = "BounceBack Data Recovery provides trusted, secure data recovery for hard drives, servers, medical records, and phones, ensuring fast, reliable service and complete data protection."
 
-# contact form action
-contact_form_action = "https://formspree.io/f/xgernlzd" # contact form works with https://formspree.io
-
-# career form action
-career_form_action = "#" # career form works with https://formspree.io
-
-# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
-custom_script= "" 
 
 # Main Sections
 mainSections= ["blog"]
@@ -44,10 +29,6 @@ location = "151 New York Ave, Hartford, CT 87329 United States"
 # Default JPEG or WebP quality setting. Default is 100.
 quality = 100
 
-# Preloader
-[preloader]
-enable = true
-preloader = "images/favicon.png" # use jpg, png, svg or gif format.
 
 # Navigation button
 [primary_button]
@@ -55,15 +36,7 @@ enable = true
 label = "Recover Now"
 link = "/start-my-recovery/"
 
-[booking_button]
-label = "Book Appointment"
 
-# cookies
-[cookies]
-enable = false
-expire_days = 2
-content = "This site uses cookies. By continuing to use this website, you agree to their use."
-button = "I Accept"
 
 ############################# contact page social site ########################
 [[contact]]
@@ -101,28 +74,3 @@ icon = "images/twitter.svg"
 link = "https://x.com/BounceBack1"
 
 
-
-
-cookie_banner_text ="We use cookies to improve your experience and analyze site traffic. You can Accept All or Customize Preferences to control them. Learn more in our [Privacy & Cookies Policy](/privacy-cookies-policy/)"
-
-[privacy_button]
-    label = "Privacy Policy"
-    link = "/privacy-cookies-policy/"
-
-[cookies_setting]
-    label = "Cookie Setting"
-
-[accept_cookies_button]
-    label = "Accept all"
-
-[customize_cookies_button]
-    label = "Customize"
-
-[cookie_settings]
-    heading = "Manage Cookie Preferences"
-    save_button = "Save Preferences"
-
-[cookie_settings.categories]
-    necessary = "Necessary cookies"
-    analytics = "Analytics cookies"
-    marketing = "Marketing cookies"

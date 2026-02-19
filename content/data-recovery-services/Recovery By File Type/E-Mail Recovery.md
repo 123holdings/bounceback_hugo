@@ -1,10 +1,7 @@
 ---
 title: E-Mail Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Losing e-mails can be disastrous for a business, especially if all of a user’s e-mails were kept in a single archive. Unfortunately, e-mail archives like Outlook PSTs can quickly become enormous when associated with a busy user.
 weight: 1
 title_image: images/email-recovery.jpg
 booking_button:

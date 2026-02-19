@@ -1,10 +1,7 @@
 ---
 title: ESI Forensics
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  Electronically stored information (ESI) can reveal clues or information that can be of vital importance to the outcome of legal proceedings or investigations.
 weight: 2
 title_image: images/esi-forensics.jpg
 booking_button:

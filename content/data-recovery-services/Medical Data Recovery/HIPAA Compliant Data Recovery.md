@@ -1,10 +1,7 @@
 ---
 title: HIPAA Compliant Data Recovery
-meta_title: Comprehensive Healthcare Services at Oasis Clinics, Egypt
 description: >-
-  Explore a full range of healthcare services at Oasis Clinics, including
-  diagnostic tests, surgical procedures, chronic disease management, and
-  wellness programs.
+  BounceBack Data Recovery will happily work with your organization to ensure that your data recovery job is HIPAA compliant. Per the Health Insurance Portability and Accountability Act, all covered entities must have business associate contracts with those companies with whom it is necessary for them to share private records or data.
 weight: 1
 title_image: images/hippa-data-recovery.webp
 booking_button:

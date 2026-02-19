@@ -1,8 +1,7 @@
 ---
 title: Four Step Process
-meta_title: 11 Strategies for a Heart-Healthy Lifestyle | Oasis Clinics
 description: >-
-  We just created an Angie’s list account.  You can get there by clicking here and searching for BounceBack Data Recovery, Inc.
+  BounceBack Data Recovery employs a four step system that makes the data recovery process hassle-free and allows the customer to track progress from start to finish.  First, we provide free shipping of your damaged media to our facilities.
 layout: blog-details
 date: 2024-02-25T00:00:00Z
 publishDate: 2024-02-25T00:00:00Z
