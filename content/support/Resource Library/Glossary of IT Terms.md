@@ -4,9 +4,9 @@ description:
 weight: 4
 title_image: images/it-grossery.jpeg
 booking_button:
-enable: true
-label: Start My Recovery Now
-url: "/start-my-recovery/"
+  enable: true
+  label: Start My Recovery Now
+  url: "/start-my-recovery/"
 ---
 
 ## Description:
