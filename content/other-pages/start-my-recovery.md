@@ -1,6 +1,5 @@
 ---
 title: Please fill the form to start recover now
-description: ""
 slug: start-my-recovery
 layout: start-my-recovery
 text: ""

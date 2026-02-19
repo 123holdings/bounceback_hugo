@@ -2,7 +2,7 @@
 
 <div class="container">
     <!-- back button -->
-    <button onclick="goback()" class="back-btn {{ if eq site.Language.LanguageName "Arabic" }}rtl-dir{{end}}" >
+    <button onclick="goback()" class="back-btn" >
         <svg class="doctor-backbtn" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle opacity="0.04" cx="22.5" cy="22.5" r="22.5" fill="#056839"/>
             <path d="M25 29L19 23L25 17" stroke="#056839" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,7 +43,7 @@
             {{/* 
             {{with .source}}
             <label for="source" class="appointment-form__clinics ">{{.label | markdownify}}</label>
-            <div class="custom-select appointment-form__custom-clinics {{ if eq site.Language.LanguageName "Arabic" }}rtl-direct{{end}}">
+            <div class="custom-select appointment-form__custom-clinics">
                 <select name="source" id="source">
                     <option value="default">{{.label}}</option>
                     
