@@ -5,7 +5,7 @@ layout: privacy-policy
 draft: false
 ---
 
-## Privacy Policy (Template) — BounceBack Data Recovery LLC
+# Privacy Policy — BounceBack Data Recovery LLC
 
 **Effective Date: [2/19/26]**
 
