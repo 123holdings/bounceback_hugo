@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://bouncebackdatarecovery.netlify.app/"
+baseURL = "https://bouncebackdatarecovery.com/"
 title = "Bounceback Data Recovery"
 theme = "bounceback-recovery"
 # post pagination
