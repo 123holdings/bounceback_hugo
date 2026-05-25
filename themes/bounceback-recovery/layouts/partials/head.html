@@ -41,24 +41,9 @@ function gtag_report_conversion(url) {
 }
 </script>
 
-<script>
-function gtag_report_lead_form_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-959410025/OGWOCIPzOguObEOnevckD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
 {{ if or (eq .RelPermalink "/successful/") (eq .RelPermalink "/thank-you/") }}
 <script>
-  gtag_report_lead_form_conversion();
+  gtag('event', 'conversion', {'send_to': 'AW-959410025/OGWOCIPzOguObEOnevckD'});
 </script>
 {{ end }}
 <!-- <meta name="google-site-verification" content="LCpncTrSdf0r9oFad-wHr8BtuuoCWdFMi1kWWQ7xydQ" /> -->
