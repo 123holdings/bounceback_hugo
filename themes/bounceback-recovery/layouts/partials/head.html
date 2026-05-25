@@ -56,7 +56,7 @@ function gtag_report_lead_form_conversion(url) {
 }
 </script>
 
-{{ if eq .RelPermalink "/thank-you/" }}
+{{ if .Params.google_ads_lead_conversion }}
 <script>
   gtag_report_lead_form_conversion();
 </script>

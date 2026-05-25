@@ -1,6 +1,7 @@
 ---
 title: "Thank You"
 url: "/thank-you/"
+google_ads_lead_conversion: true
 ---
 
 # Thank you
