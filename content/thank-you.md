@@ -1,8 +1,11 @@
 ---
 title: "Thank You"
 url: "/thank-you/"
-google_ads_lead_conversion: true
 ---
+<!-- Event snippet for Submit lead form conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-959410025/OGW0CPzOgu0bEOnevckD'});
+</script>
 
 # Thank you
 
