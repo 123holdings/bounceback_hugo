@@ -13,7 +13,7 @@
                     <div class="home-map__telephone">phone: 
                         {{$lastIndex:= sub (len .) 1}}
                         {{range $index,$item:= .}}
-                        <a href="tel:{{.}}" class="home-map__tel" onclick="return gtag_report_conversion('tel:{{$tel}}');"> {{$item | markdownify}}</a>
+                        <a href="tel:{{.}}" class="home-map__tel" onclick="return gtag_report_conversion('tel:{{.}}');"> {{$item | markdownify}}</a>
                         {{if ne $index $lastIndex }}
                         <span></span>
                         {{end}}
