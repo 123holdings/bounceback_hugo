@@ -55,6 +55,12 @@ function gtag_report_lead_form_conversion(url) {
   return false;
 }
 </script>
+
+{{ if eq .RelPermalink "/thank-you/" }}
+<script>
+  gtag_report_lead_form_conversion();
+</script>
+{{ end }}
 <!-- <meta name="google-site-verification" content="LCpncTrSdf0r9oFad-wHr8BtuuoCWdFMi1kWWQ7xydQ" /> -->
 
 <!-- favicon -->
