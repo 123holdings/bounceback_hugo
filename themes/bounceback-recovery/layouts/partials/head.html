@@ -11,6 +11,16 @@
 <meta name="description" content="{{ .Params.Description | default site.Params.description }}">
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ hugo.Generator }}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-959410025"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-959410025');
+</script>
 <!-- <meta name="google-site-verification" content="LCpncTrSdf0r9oFad-wHr8BtuuoCWdFMi1kWWQ7xydQ" /> -->
 
 <!-- favicon -->
