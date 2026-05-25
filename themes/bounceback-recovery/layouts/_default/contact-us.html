@@ -8,7 +8,7 @@
     <div class="appointment contact">
         <!-- appointment form  -->
         {{ with .Params.formData }}
-        <form style="max-width: 650px;"  class="appointment-form contact__form" name="contact_us" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+        <form style="max-width: 650px;"  class="appointment-form contact__form" name="contact_us" method="POST" action="/thank-you/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
             <input type="hidden" name="contact_us" value="contact_us">
             <!-- Hidden honeypot field -->
             <input type="text" name="bot-field" style="display: none;" />

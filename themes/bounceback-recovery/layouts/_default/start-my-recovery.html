@@ -16,7 +16,7 @@
         </div>
         {{with .Params.formData}}
         <!-- appointment form  -->
-        <form  class="appointment-form" name="appointments" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+        <form  class="appointment-form" name="appointments" method="POST" action="/thank-you/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
             <input type="hidden" name="appointments" value="appointments">
             <!-- Hidden honeypot field -->
             <input type="text" name="bot-field" style="display: none;" />
