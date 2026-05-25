@@ -9,7 +9,7 @@
                     <div class="hero__slide">
                         <h1 class="hero__heading">{{.heading | markdownify}}</h1>
                         <p class="hero__schedule">{{.schedule | markdownify}}</p>
-                        <a class="button hero__button" href="tel:{{.button_url}}" onclick="return gtag_report_conversion('tel:{{$tel}}');">{{.button | markdownify}}</a>
+                        <a class="button hero__button" href="tel:{{.button_url}}" onclick="return gtag_report_conversion('tel:{{.button_url}}');">{{.button | markdownify}}</a>
                     </div>
                 </div>
                 {{ end }}
