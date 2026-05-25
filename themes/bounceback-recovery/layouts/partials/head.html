@@ -40,7 +40,13 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
+{{ if or (eq .RelPermalink "/other-pages/successful/") (eq .RelPermalink "/successful/") (eq .Params.slug "successful") }}
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-959410025/OGW0CPzOgu0bEOnevckD'});
+</script>
+{{ end }}
 
+<!-- Event snippet for Submit lead form conversion page -->
 
 <!-- <meta name="google-site-verification" content="LCpncTrSdf0r9oFad-wHr8BtuuoCWdFMi1kWWQ7xydQ" /> -->
 
